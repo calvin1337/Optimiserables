@@ -1,6 +1,7 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebook, faInstagram, faTiktok, faTwitter } from '@fortawesome/free-brands-svg-icons'
+import {faFacebookSquare, faInstagram, faTiktok, faXTwitter } from '@fortawesome/free-brands-svg-icons'
+import Logo from "../../Images/optimiserables_Logo.png"
 import "./Navigation.css"
 
 
@@ -8,16 +9,14 @@ export default function Navigation() {
   return (
     <nav>
       <div>
-        <h1>
-          LOGO
-        </h1>
+        <img src={Logo} alt="Optimiserables Logo" className='OpLogo'/>
       </div>
       <div>
         <div className='socialContainer'>
-          <FontAwesomeIcon icon={faInstagram} size="3x"/>
-          <FontAwesomeIcon icon={faFacebook} size="3x"/>
-          <FontAwesomeIcon icon={faTiktok} size="3x"/>
-          <FontAwesomeIcon icon={faTwitter} size="3x" />
+          <FontAwesomeIcon icon={faInstagram} size="4x" color='#000'/>
+          <FontAwesomeIcon icon={faFacebookSquare} size="4x" color='#000'/>
+          <FontAwesomeIcon icon={faTiktok} size="4x" color='#000'/>
+          <FontAwesomeIcon icon={faXTwitter} size="4x" color='#000'/>
         </div>
       </div>
     </nav>

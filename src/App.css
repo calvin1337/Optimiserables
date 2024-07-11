@@ -1,13 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&family=Limelight&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&family=Limelight&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 body {
   margin: 0;
-  height: 100vh;
+  background-image: url('./Images/Optimiserable_Background.jpg');
+  background-size: cover;
+  background-position: center;
+  
 }
 
 .App{
   text-align: center;
-  background: rgb(67,65,65);
-  background: linear-gradient(180deg, rgba(67,65,65,1) 0%, rgba(35,35,46,1) 35%, rgba(17,18,19,1) 100%);
+  /* background: rgb(67,65,65);
+  background: linear-gradient(180deg, rgba(67,65,65,1) 0%, rgba(35,35,46,1) 35%, rgba(17,18,19,1) 100%); */
   height: 100vh;
-  color: #ccc;
+  color: #000;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+h1{
+  font-family: "Limelight", sans-serif;
+  /* font-family: "Fascinate"; */
+  /* font-family: "Spectral", serif; */
+  color: black;
+  font-size: 52px;
+}
+
+.inputContainer{
+  display: flex;
+  flex-direction: row;
+  border: red 1px solid;
+}
+
+.half {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #000; 
 }
