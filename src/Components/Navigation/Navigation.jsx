@@ -8,15 +8,15 @@ import "./Navigation.css"
 export default function Navigation() {
   return (
     <nav>
-      <div>
+      <div className='logoContainer'>
         <img src={Logo} alt="Optimiserables Logo" className='OpLogo'/>
       </div>
       <div>
         <div className='socialContainer'>
-          <FontAwesomeIcon icon={faInstagram} size="4x" color='#000'/>
-          <FontAwesomeIcon icon={faFacebookSquare} size="4x" color='#000'/>
-          <FontAwesomeIcon icon={faTiktok} size="4x" color='#000'/>
-          <FontAwesomeIcon icon={faXTwitter} size="4x" color='#000'/>
+          <FontAwesomeIcon icon={faInstagram} size="4x" color='#6A3276'/>
+          <FontAwesomeIcon icon={faFacebookSquare} size="4x" color='#6A3276'/>
+          <FontAwesomeIcon icon={faTiktok} size="4x" color='#6A3276'/>
+          <FontAwesomeIcon icon={faXTwitter} size="4x" color='#6A3276'/>
         </div>
       </div>
     </nav>

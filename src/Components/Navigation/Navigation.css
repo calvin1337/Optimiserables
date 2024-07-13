@@ -2,7 +2,7 @@ nav{
   display:flex ;
   align-items: center;
   justify-content:space-between;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   position: fixed;
   height: 100px;
   top: 0;
@@ -12,13 +12,18 @@ nav{
 .socialContainer{
   width: 100%;
   height: 70px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: flex;
   align-items: center;
   gap: 20px;
+  padding: 20px;
 }
 
 .OpLogo{
   height: 70px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
+}
+
+.logoContainer{
+  padding: 20px;
 }

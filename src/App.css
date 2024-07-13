@@ -26,20 +26,60 @@ h1{
   font-family: "Limelight", sans-serif;
   /* font-family: "Fascinate"; */
   /* font-family: "Spectral", serif; */
-  color: black;
-  font-size: 52px;
+  color: #6A3276;
+  font-size: 42px;
 }
 
 .inputContainer{
   display: flex;
   flex-direction: row;
-  border: red 1px solid;
+  /* border: red 1px solid; */
 }
 
-.half {
+.flex1 {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid #000;  */
+  width: 100%;
+}
+
+.flex2 {
   flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid #000; 
+  /* border: 1px solid #000;  */
+  width: 100%;
+}
+
+h2{
+  color: #6A3276;
+  font-family: "Spectral", serif;
+
+}
+
+
+form .formField{
+  width: 100%;
+  height: 100%;
+}
+form input {
+  border: 3px solid #6A3276;
+  border-radius: 5px;
+  height: 100%;
+  line-height: normal;
+  color: #6A3276;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  user-select: auto;
+  font-size: 16px;
+  padding: 0 6px;
+  padding-left: 12px;
+}
+
+form input:focus {
+  border: 3px solid #E4CC5D;
 }
