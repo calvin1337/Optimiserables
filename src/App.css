@@ -7,7 +7,10 @@ body {
   background-image: url('./Images/Optimiserable_Background.jpg');
   background-size: cover;
   background-position: center;
-  
+}
+
+button{
+  border:none;
 }
 
 .App{
@@ -20,6 +23,7 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  background: rgba(31, 31, 31, 0.2);
 }
 
 h1{
