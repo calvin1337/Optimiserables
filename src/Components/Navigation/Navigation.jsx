@@ -22,12 +22,23 @@ export default function Navigation() {
       <button onClick={toggleNav} className="navbarToggler">
                 <FontAwesomeIcon icon={toggle ? faTimes : faBars} />
         </button>
-            <div className="navInner">
-              <img src={Logo} alt="Optimiserables Logo" className='OpLogo'/>
-                <ul className="navMenu">
-                  
-
+            <div className="navInner p-10">
+              <img src={Logo} alt="Optimiserables Logo" className=' w-full '/>
+                <ul className="navMenu text-2xl">
+                <li><a>Home</a></li>
+                <li><a>Events</a></li>
+                <li><a>Meet the team</a></li>
+                <li><a>Contact</a></li>
+                
                 </ul>
+                <h3>Follow us on</h3>
+                <div className='sm: flex col mt-auto gap-2 mb-4'>
+                    <FontAwesomeIcon icon={faInstagram} size="3x" color='#ebbc52'/>
+                    <FontAwesomeIcon icon={faFacebookSquare} size="3x" color='#ebbc52'/>
+                    <FontAwesomeIcon icon={faTiktok} size="3x" color='#ebbc52'/>
+                    <FontAwesomeIcon icon={faXTwitter} size="3x" color='#ebbc52'/>
+                </div>
+                <p className="navCopyright">Created by <b><a target="_blank" href="/">Davy & Calvin</a></b></p>
             </div>
         </div>
        

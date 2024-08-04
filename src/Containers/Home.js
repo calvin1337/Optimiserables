@@ -15,7 +15,7 @@ export default function Home() {
         {/* Input container */}
         <form className='inputContainer'>
         <div className='flex1'>
-            <div className='formField'>
+            <div className='formField '>
             <input placeholder='Enter your email'></input>
             </div>
             

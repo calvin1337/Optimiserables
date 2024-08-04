@@ -51,11 +51,12 @@ nav{
   transform: translateX(-100%)  ;
   height: 100vh;
   width: 300px;
-  background: #191d2b;
-  border-right: 1px solid #2e344e;
+  background: #703b71;
+  border-right: 1px solid #ebbc52;
   z-index: 10;
   -webkit-transition: all .4s ease-out;
   transition: all .4s ease-out;
+  
 }
 
 
@@ -112,10 +113,10 @@ nav{
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
   overflow: hidden;
   overflow-y: auto;
+  
 }
 .navImage {
   padding: 20px 0;
@@ -139,6 +140,7 @@ nav{
 .navMenu {
   width: 100%;
   padding: 15px 5px;
+  
 }
 
 .navMenu li {
@@ -149,7 +151,6 @@ nav{
 
 .navMenu li a {
   text-transform: uppercase;
-  font-size: .94rem;
   letter-spacing: 1px;
   display: block;
   padding: 5px 0;
@@ -204,4 +205,17 @@ nav{
 .navMenu li a:hover:before {
   width: 100%;
   visibility: visible;
+}
+
+.navCopyright {
+  display: block;
+  width: 100%;
+  color: #ebbc52;
+  text-align: center;
+  margin-bottom: 0;
+  font-size: 1rem;
+  padding: 16px 0;
+  border-top: 1px solid #ebbc52;
+  font-weight: 300;
+ 
 }
