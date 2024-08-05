@@ -1,12 +1,12 @@
-nav{
+.navbar{
   display:flex ;
   align-items: center;
   justify-content:space-between;
-  /* border: 1px solid red; */
   position: fixed;
   height: 100px;
   top: 0;
   width: 100%;
+  left: 0;
 }
 
 .socialContainer{
@@ -18,7 +18,12 @@ nav{
   gap: 20px;
   padding: 20px;
 }
-
+.socialLink:hover{
+color: #ebbc52;
+}
+.socialLink{
+color: #6A3276;
+}
 .OpLogo{
   height: 70px;
   /* border: 1px solid red; */
@@ -39,7 +44,7 @@ nav{
   background: #703b71;
   justify-content: center;
   align-items: center;
-  display: flex;
+  display: none;
   color: #ebbc52;
   left: 100%;
 }
@@ -56,53 +61,41 @@ nav{
   z-index: 10;
   -webkit-transition: all .4s ease-out;
   transition: all .4s ease-out;
-  
+  display: none;
 }
 
 
 
 
-@media only screen and (max-width: 991px) and (min-width: 768px) {
-.navbarToggler {
-  display: flex ;
-}
 
-}
-
-@media only screen and (min-width: 992px) and (max-width:1199px){
-  .navbarToggler{
-      display:flex;
-  }
-}
 
 @media only screen and (max-width: 767px){
   .navbarToggler{
       display:flex;
   }
+  .navSidebar {
+    width: 250px;
+    display: block;
+    transform: translateX(-100%)  ;
+}
 } 
 
 
 @media only screen and (max-width: 991px) and (min-width: 768px){
 .navSidebar {
   width: 260px;
-  transform: translateX(-100%)  
+  transform: translateX(-100%);
+  display: block;
+}
+.navbarToggler{
+  display:flex;
 }
 
 }
 
-@media only screen and (min-width: 992px) and (max-width:1199px){
-  .navSidebar {
-      width: 260px;
-      transform: translateX(-100%)  
-  }
-}
 
-@media only screen and (max-width: 767px){
-  .navSidebar {
-      width: 250px;
-      transform: translateX(-100%)  ;
-  }
-}
+
+
 
 .showNav{
   transform:translateX(0) !important;
@@ -118,29 +111,15 @@ nav{
   overflow-y: auto;
   
 }
-.navImage {
-  padding: 20px 0;
-  display: block;
-  width: 100%;
-  text-align: center;
-  border-bottom: 1px solid #2e344e;
-}
-.navImage a {
-  height: 200px;
-  width: 200px;
-  border-radius: 1000px;
-  border: 7px solid #92A1CF;
-  overflow: hidden;
-  display: inline-block;
-  vertical-align: middle;
-}
-
-
 
 .navMenu {
   width: 100%;
   padding: 15px 5px;
-  
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .navMenu li {
@@ -154,11 +133,14 @@ nav{
   letter-spacing: 1px;
   display: block;
   padding: 5px 0;
-  color: #a4acc4;
+  color: #ebbc52;
   font-weight: 600;
   position: relative;
   overflow: hidden;
   z-index: 1;
+}
+.navInner{
+  color: #ebbc52;
 }
 
 .navMenu li:not(:last-child) {
@@ -168,44 +150,7 @@ nav{
 .navMenu li a.active {
   color: #fff;
 }
-.navMenu li a.active:hover {
-  color: #fff;
-}
 
-.navMenu li a.active:before {
-  background: #92A1CF;
-  width: 100%;
-  visibility: visible;
-}
-
-.navMenu li a:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 100%;
-  height: 100%;
-  width: 0;
-  background: rgba(3,127,255,.2);
-  visibility: hidden;
-  z-index: -1;
-}
-
-
-
-.navMenu li a:before {
-  -webkit-transition: all .4s ease-out;
-  transition: all .4s ease-out;
-}
-
-.navMenu li a:hover {
-  color: #92A1CF;
-}
-
-.navMenu li a:hover:before {
-  width: 100%;
-  visibility: visible;
-}
 
 .navCopyright {
   display: block;

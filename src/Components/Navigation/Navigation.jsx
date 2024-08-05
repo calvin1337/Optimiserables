@@ -23,7 +23,7 @@ export default function Navigation() {
                 <FontAwesomeIcon icon={toggle ? faTimes : faBars} />
         </button>
             <div className="navInner p-10">
-              <img src={Logo} alt="Optimiserables Logo" className=' w-full '/>
+              <img src={Logo} alt="Optimiserables Logo" className=' w-full'/>
                 <ul className="navMenu text-2xl">
                 <li><a>Home</a></li>
                 <li><a>Events</a></li>
@@ -31,8 +31,9 @@ export default function Navigation() {
                 <li><a>Contact</a></li>
                 
                 </ul>
-                <h3>Follow us on</h3>
-                <div className='sm: flex col mt-auto gap-2 mb-4'>
+                <div className='mt-auto'>
+                <h3 className='mb-4'>Follow us!</h3>
+                <div className='sm: flex col gap-2 mb-4'>
                     <FontAwesomeIcon icon={faInstagram} size="3x" color='#ebbc52'/>
                     <FontAwesomeIcon icon={faFacebookSquare} size="3x" color='#ebbc52'/>
                     <FontAwesomeIcon icon={faTiktok} size="3x" color='#ebbc52'/>
@@ -40,18 +41,26 @@ export default function Navigation() {
                 </div>
                 <p className="navCopyright">Created by <b><a target="_blank" href="/">Davy & Calvin</a></b></p>
             </div>
+            </div>
         </div>
-       
+       <div className='navbar'>
+        
       <div className='logoContainer'>
         <img src={Logo} alt="Optimiserables Logo" className='OpLogo'/>
       </div>
       <div>
         <div className='socialContainer'>
-          <FontAwesomeIcon icon={faInstagram} size="4x" color='#6A3276'/>
-          <FontAwesomeIcon icon={faFacebookSquare} size="4x" color='#6A3276'/>
-          <FontAwesomeIcon icon={faTiktok} size="4x" color='#6A3276'/>
-          <FontAwesomeIcon icon={faXTwitter} size="4x" color='#6A3276'/>
+          <a href="/" className='socialLink'><FontAwesomeIcon icon={faInstagram} size="4x" />
+          </a>
+          <a href="/" className='socialLink'><FontAwesomeIcon icon={faXTwitter} size="4x" />
+          </a>
+          <a href="/" className='socialLink'><FontAwesomeIcon icon={faTiktok} size="4x" />
+          </a>
+          <a href="/" className='socialLink'><FontAwesomeIcon icon={faFacebookSquare} size="4x" />
+          </a>
         </div>
+      </div>
+      
       </div>
     </nav>
   )
