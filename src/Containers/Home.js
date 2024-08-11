@@ -2,6 +2,9 @@ import React from 'react'
 import Button from '../Components/Misc/Button'
 import enuLogo from "../Images/enu.svg"
 import fringeLogo from "../Images/fringe.jpg"
+import {faFacebookSquare, faInstagram, faTiktok, faXTwitter } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 
 export default function Home() {
   return (
@@ -28,12 +31,20 @@ export default function Home() {
           </div>
         </form>
       </div>
+      <div className="fixed bottom-0 left-0 p-4 flex space-x-4 lg:hidden">
+      <div className='sm: flex col gap-2'>
+                    <FontAwesomeIcon icon={faInstagram} size="2x" color='#ebbc52'/>
+                    <FontAwesomeIcon icon={faFacebookSquare} size="2x" color='#ebbc52'/>
+                    <FontAwesomeIcon icon={faTiktok} size="2x" color='#ebbc52'/>
+                    <FontAwesomeIcon icon={faXTwitter} size="2x" color='#ebbc52'/>
+                </div>
+      </div>
       <div className="fixed bottom-0 right-0 p-4 flex space-x-4">
         {/* https://www.edfringe.com/take-part/putting-on-a-show/marketing-and-promotion#fringe-logos  */}
-        <div className="w-40 h-20">
+        <div className="lg:w-40 lg:h-20 h-10">
           <img src={enuLogo} alt="Edinburgh Napier Logo" className="w-full h-full object-contain"/>
         </div>
-        <div className="w-40 h-20">
+        <div className="lg:w-40 lg:h-20 h-10">
           <img src={fringeLogo} alt="Edinburgh Fringe Logo" className="w-full h-full object-contain bg-transparent"/>
         </div>
       </div>

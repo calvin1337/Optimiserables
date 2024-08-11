@@ -43,12 +43,12 @@ export default function Navigation() {
             </div>
             </div>
         </div>
-       <div className='navbar hidden lg:flex'>
+       <div className='navbar flex justify-center lg:justify-between'>
         
-      <div className='logoContainer'>
+      <div className='logoContainer '>
         <img src={Logo} alt="Optimiserables Logo" className='OpLogo'/>
       </div>
-      <div>
+      <div className='hidden lg:block'>
         <div className='socialContainer '>
           <a href="/" className='socialLink'><FontAwesomeIcon icon={faInstagram} size="4x" />
           </a>
