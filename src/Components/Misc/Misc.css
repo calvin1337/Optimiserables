@@ -1,8 +1,6 @@
 
 .button{
  
-  
- 
   display: inline-block;
   outline: 0;
   cursor: pointer;
@@ -19,10 +17,6 @@
   transition-duration: .15s;
   transition-property: all;
   transition-timing-function: cubic-bezier(.4,0,.2,1);
-  
-  
-  
-  
 }
 
 .button:hover{

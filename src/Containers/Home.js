@@ -19,7 +19,7 @@ export default function Home() {
           <div className='flex-1'>
             <div className='formField'>
               <input 
-                className="w-full p-3 text-lg leading-7 border-2 border-[#6A3276] rounded-md"
+                className="w-full p-3 text-lg border-3 border-[#6A3276] rounded-md"
                 placeholder='Enter your email'
               />
             </div>

@@ -9,6 +9,7 @@ body {
   background-image: url('./Images/Optimiserable_Background.jpg');
   background-size: cover;
   background-position: center;
+  padding: 0;
 }
 
 button{
