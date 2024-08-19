@@ -25,10 +25,10 @@ export default function Navigation() {
             <div className="navInner p-10">
               <img src={Logo} alt="Optimiserables Logo" className=' w-full'/>
                 <ul className="navMenu text-2xl">
-                <li><a>Home</a></li>
-                <li><a>Events</a></li>
-                <li><a>Meet the team</a></li>
-                <li><a>Contact</a></li>
+                <li>Home</li>
+                <li>Events</li>
+                <li>Meet the team</li>
+                <li>Contact</li>
                 
                 </ul>
                 <div className='mt-auto'>
@@ -50,13 +50,13 @@ export default function Navigation() {
       </div>
       <div className='hidden lg:block'>
         <div className='socialContainer '>
-          <a href="/" className='socialLink'><FontAwesomeIcon icon={faInstagram} size="4x" />
+          <a href="https://instagram.com" className='socialLink'><FontAwesomeIcon icon={faInstagram} size="4x" />
           </a>
-          <a href="/" className='socialLink'><FontAwesomeIcon icon={faXTwitter} size="4x" />
+          <a href="https://x.com" className='socialLink'><FontAwesomeIcon icon={faXTwitter} size="4x" />
           </a>
-          <a href="/" className='socialLink'><FontAwesomeIcon icon={faTiktok} size="4x" />
+          <a href="https://tiktok.com" className='socialLink'><FontAwesomeIcon icon={faTiktok} size="4x" />
           </a>
-          <a href="/" className='socialLink'><FontAwesomeIcon icon={faFacebookSquare} size="4x" />
+          <a href="https://facebook.com" className='socialLink'><FontAwesomeIcon icon={faFacebookSquare} size="4x" />
           </a>
         </div>
       </div>
