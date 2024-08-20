@@ -49,17 +49,16 @@ export default function Navigation() {
       </div>
       <div className='hidden lg:block'>
         <div className='socialContainer '>
-          <a href="https://instagram.com" className='socialLink'><FontAwesomeIcon icon={faInstagram} size="4x" />
+          <a href="https://www.instagram.com/optimiserables/" className='socialLink'><FontAwesomeIcon icon={faInstagram} size="4x" />
           </a>
-          <a href="https://x.com" className='socialLink'><FontAwesomeIcon icon={faXTwitter} size="4x" />
+          <a href="https://x.com/Optimiserables" className='socialLink'><FontAwesomeIcon icon={faXTwitter} size="4x" />
           </a>
-          <a href="https://tiktok.com" className='socialLink'><FontAwesomeIcon icon={faTiktok} size="4x" />
+          <a href="https://www.tiktok.com/@theoptimiserables?lang=en" className='socialLink'><FontAwesomeIcon icon={faTiktok} size="4x" />
           </a>
-          <a href="https://facebook.com" className='socialLink'><FontAwesomeIcon icon={faFacebookSquare} size="4x" />
+          <a href="https://www.facebook.com/profile.php?id=61557637915188" className='socialLink'><FontAwesomeIcon icon={faFacebookSquare} size="4x" />
           </a>
         </div>
       </div>
-      
       </div>
     </nav>
   )
