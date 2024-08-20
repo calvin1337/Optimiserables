@@ -29,7 +29,6 @@ export default function Navigation() {
                 <li>Events</li>
                 <li>Meet the team</li>
                 <li>Contact</li>
-                
                 </ul>
                 <div className='mt-auto'>
                 <h3 className='mb-4'>Follow us!</h3>
