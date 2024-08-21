@@ -46,11 +46,12 @@ function ActorSelect() {
   ];
 
   return (
-    <div className='mx-auto my-4 mb-12 bg-white/50 p-1.5 grid grid-cols-4 gap-2'>
-      
+    <div className='mx-auto my-4 mb-12 p-1.5 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 '>
+    
     {actors.map((actor, index) => (
         <ActorSingle
           key={index}
+          index={index}
           name={actor.name}
           src={actor.src}
           isActive={index === activeActor}
