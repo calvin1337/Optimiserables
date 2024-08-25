@@ -2,7 +2,7 @@ import "./Misc.css"
 
 export default function Button() {
   return (
-    <button class="button">Submit</button>
+    <button disabled class="button">Submit</button>
   )
 }
 
