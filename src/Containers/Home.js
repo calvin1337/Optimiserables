@@ -1,7 +1,5 @@
 import React from 'react'
 import Button from '../Components/Misc/Button'
-import enuLogo from "../Images/enu.svg"
-import fringeLogo from "../Images/fringe.jpg"
 import {faFacebookSquare, faInstagram, faTiktok, faXTwitter } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -12,7 +10,7 @@ export default function Home() {
       <h1 className='lg:text-8xl'>
         Exciting things are on the horizon...
       </h1>
-      <h2 className='lg:text-3xl'>Subscribe to our newsletter or follow us on social media to be the first to know about all our upcoming events!</h2>
+      <h2 className='lg:text-3xl'>Subscribe to our newsletter or follow us on social media to be the first to know about all our upcoming events for Edinburgh fringe in 2025!</h2>
       <div className='mt-5 w-full flex justify-center'>
         {/* Input container */}
         <form className='flex flex-col w-full sm:w-11/12 lg:flex-row gap-5 h-full'>
@@ -33,11 +31,19 @@ export default function Home() {
       </div>
       <div className="fixed bottom-0 left-0 p-4 flex space-x-4 lg:hidden">
       <div className='sm: flex col gap-2'>
-                    <FontAwesomeIcon icon={faInstagram} size="2x" color='#ebbc52'/>
-                    <FontAwesomeIcon icon={faFacebookSquare} size="2x" color='#ebbc52'/>
-                    <FontAwesomeIcon icon={faTiktok} size="2x" color='#ebbc52'/>
-                    <FontAwesomeIcon icon={faXTwitter} size="2x" color='#ebbc52'/>
-                </div>
+        <a href="https://www.instagram.com/optimiserables/" target="_blank" rel="noreferrer" className='socialLink'>
+          <FontAwesomeIcon icon={faInstagram} size="2x" color='#ebbc52'/>
+        </a>
+          <a href="https://x.com/Optimiserables" target="_blank" rel="noreferrer" className='socialLink'>
+          <FontAwesomeIcon icon={faFacebookSquare} size="2x" color='#ebbc52'/>
+          </a>
+          <a href="https://www.tiktok.com/@theoptimiserables?lang=en" rel="noreferrer" target="_blank" className='socialLink'>
+          <FontAwesomeIcon icon={faTiktok} size="2x" color='#ebbc52'/>
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=61557637915188" rel="noreferrer" className='socialLink'>
+          <FontAwesomeIcon icon={faXTwitter} size="2x" color='#ebbc52'/>
+          </a>
+      </div>
       </div>
       {/* <div className="fixed bottom-0 right-0 p-4 flex space-x-4">
         https://www.edfringe.com/take-part/putting-on-a-show/marketing-and-promotion#fringe-logos 
