@@ -23,7 +23,7 @@ export default function Navigation() {
                 <FontAwesomeIcon icon={toggle ? faTimes : faBars} />
         </button>
             <div className="navInner p-10">
-              <img src={Logo} alt="Optimiserables Logo" className=' w-full'/>
+              <img src={Logo} alt="Optimiserables Logo Edinburgh Fringe 2025" className=' w-full'/>
                 <ul className="navMenu text-2xl">
                 <li>Home</li>
                 <li>Events</li>
@@ -49,13 +49,13 @@ export default function Navigation() {
       </div>
       <div className='hidden lg:block'>
         <div className='socialContainer '>
-          <a href="https://www.instagram.com/optimiserables/" className='socialLink'><FontAwesomeIcon icon={faInstagram} size="4x" />
+          <a href="https://www.instagram.com/optimiserables/" target="_blank" rel="noreferrer" className='socialLink'><FontAwesomeIcon icon={faInstagram} size="4x" />
           </a>
-          <a href="https://x.com/Optimiserables" className='socialLink'><FontAwesomeIcon icon={faXTwitter} size="4x" />
+          <a href="https://x.com/Optimiserables" target="_blank" rel="noreferrer" className='socialLink'><FontAwesomeIcon icon={faXTwitter} size="4x" />
           </a>
-          <a href="https://www.tiktok.com/@theoptimiserables?lang=en" className='socialLink'><FontAwesomeIcon icon={faTiktok} size="4x" />
+          <a href="https://www.tiktok.com/@theoptimiserables?lang=en" rel="noreferrer" target="_blank" className='socialLink'><FontAwesomeIcon icon={faTiktok} size="4x" />
           </a>
-          <a href="https://www.facebook.com/profile.php?id=61557637915188" className='socialLink'><FontAwesomeIcon icon={faFacebookSquare} size="4x" />
+          <a href="https://www.facebook.com/profile.php?id=61557637915188" rel="noreferrer" className='socialLink'><FontAwesomeIcon icon={faFacebookSquare} size="4x" />
           </a>
         </div>
       </div>
