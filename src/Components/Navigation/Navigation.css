@@ -164,3 +164,10 @@ color: #6A3276;
   font-weight: 300;
  
 }
+
+.footer {
+  height: 200px;
+  background-color: #6A3276;
+  width: 100%;
+  margin-top: 50px;
+}

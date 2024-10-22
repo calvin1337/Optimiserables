@@ -4,6 +4,9 @@ import Button from '../Misc/Button'
 export default function Form() {
   return (
     <form className='flex gap-2 flex-col w-2/5 contact-form'>
+      <h1 className='lg:text-8xl'>
+        Contact Us!
+      </h1>
       <div className='flex gap-2'>
         <div className='flex flex-col w-full'>
           <label className="text-left" htmlFor="fname">First Name</label>

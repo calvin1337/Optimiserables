@@ -1,4 +1,5 @@
 import './App.css';
+import Footer from './Components/Navigation/Footer';
 import Navigation from './Components/Navigation/Navigation';
 import Contact from './Containers/Contact';
 import Home from "./Containers/Home"
@@ -15,6 +16,7 @@ function App() {
       <Upcoming />
       <Team />
       <Contact />
+      <Footer />
     </div>
   );
 }
