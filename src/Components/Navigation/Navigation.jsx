@@ -44,20 +44,35 @@ export default function Navigation() {
         </div>
        <div className='navbar flex justify-center lg:justify-between'>
         
+      
+      <div className='hidden lg:block'>
+        <div className='linkContainer'>
+          <ul className='justify-center flex flex-row gap-3 text-3xl'>
+            <li className='active'>
+              <a href="/">
+              Home
+              </a>
+            </li>
+            <li>
+              <a href="/">
+              Events
+              </a>
+            </li>
+            <li>
+              <a href="/">
+              The Team
+              </a>
+            </li>
+            <li>
+              <a href="/">
+              Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
       <div className='logoContainer '>
         <img src={Logo} alt="Optimiserables Logo" className='OpLogo'/>
-      </div>
-      <div className='hidden lg:block'>
-        <div className='socialContainer '>
-          <a href="https://www.instagram.com/optimiserables/" target="_blank" rel="noreferrer" className='socialLink'><FontAwesomeIcon icon={faInstagram} size="4x" />
-          </a>
-          <a href="https://x.com/Optimiserables" target="_blank" rel="noreferrer" className='socialLink'><FontAwesomeIcon icon={faXTwitter} size="4x" />
-          </a>
-          <a href="https://www.tiktok.com/@theoptimiserables?lang=en" rel="noreferrer" target="_blank" className='socialLink'><FontAwesomeIcon icon={faTiktok} size="4x" />
-          </a>
-          <a href="https://www.facebook.com/profile.php?id=61557637915188" rel="noreferrer" className='socialLink'><FontAwesomeIcon icon={faFacebookSquare} size="4x" />
-          </a>
-        </div>
       </div>
       </div>
     </nav>

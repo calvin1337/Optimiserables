@@ -6,7 +6,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function Home() {
   return (
-    <div className='container flex flex-col items-center justify-center w-3/4'>
+    
+    <div className='container flex flex-col items-center justify-center w-3/4 page h-screen'>
       <h1 className='lg:text-8xl'>
         Exciting things are on the horizon...
       </h1>
