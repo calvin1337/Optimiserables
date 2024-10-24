@@ -5,13 +5,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Fascinate&family=Limelight&family=Luckiest+Guy&family=Poetsen+One&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 @import url("https://fonts.googleapis.com/css?family=Merriweather:400,700");
 
-body {
+html, body {
   margin: 0;
-  background-image: url('./Images/Optimiserable_Background.jpg');
+  background-color: #1B1C1E;
+  /* background-image: url('./Images/Optimiserable_Background.jpg');
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+  background-attachment: fixed; */
   padding: 0;
+  overflow: hidden;
 }
 
 button{
@@ -34,6 +36,17 @@ color: #E4CC5D;
   background: rgba(31, 31, 31, 0.3);
   
 }
+
+.section {
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  scroll-snap-align: start; /* Optional smooth snap */
+  transition: transform 0.5s ease-in-out; /* Smooth scrolling transition */
+}
+
 
 h1{
   font-family: "Luckiest Guy";
