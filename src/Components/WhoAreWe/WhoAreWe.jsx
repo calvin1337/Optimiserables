@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import Backlight from "../Components/Misc/Effects/Backlight/Backlight";
+import ActorCard from "./ActorCard";
+import ActorControls from "./ActorControls";
 
 const actors = [
   {
@@ -12,9 +13,9 @@ const actors = [
     name: "Michael Garden",
     image: "PortraitMichael_Clean.png",
     description:
-      "Michael is an upcoming actor and writer charging in to perform at the Fringe for the 1st time in 2025. He will also be our costume designer which means he'll be hunting through charity shops and hoping for the best.",
-  },
-  {
+    "Michael is an upcoming actor and writer charging in to perform at the Fringe for the 1st time in 2025. He will also be our costume designer which means he'll be hunting through charity shops and hoping for the best.",
+},
+{
     name: "Brook Smith",
     image: "PortraitBrook_Clean.png",
     description:
@@ -59,49 +60,30 @@ export default function WhoAreWe() {
     );
   };
 
-  const imagePath = require(`../Images/Members/${actors[currentActorIndex].image}`);
-
   return (
-    <div className="container flex flex-col items-center justify-center w-5/6 h-screen">
+    <div className="relative container flex flex-col items-center w-full h-full"> 
       <div className="flex flex-col md:flex-row w-full">
-        <div className="md:w-1/2 p-4 order-1 md:order-2 flex justify-center md:justify-start">
-          <Backlight>
-            <img
-              src={imagePath}
-              alt={actors[currentActorIndex].name}
-              className="hover-image w-3/4 h-64 object-contain sm:w-full sm:h-80 md:h-96 lg:h-[500px] mx-auto"
-            />
-          </Backlight>
-        </div>
-
-        <div className="md:w-1/2 p-4 flex flex-col justify-between text-center md:text-left order-2 md:order-1">
-          <h1 className="text-xl sm:text-4xl lg:text-6xl">
-            {actors[currentActorIndex].name}
-          </h1>
-          <p className="text-xs sm:text-lg md:text-xl lg:text-2xl text-white w-full md:w-4/5">
-            {actors[currentActorIndex].description}
-          </p>
-          <h2 className="text-lg sm:text-xl lg:text-2xl flex justify-center md:justify-between items-center mt-4 md:mt-0">
-            <button
-              onClick={handlePrevious}
-              className="text-white p-2 rounded hover:opacity-80"
-              style={{ backgroundColor: "#F1C570" }}
-            >
-              &#x1F878;
-            </button>
-            <span>
-              {currentActorIndex + 1} / {actors.length}
-            </span>
-            <button
-              onClick={handleNext}
-              className="text-white p-2 rounded hover:opacity-80"
-              style={{ backgroundColor: "#F1C570" }}
-            >
-              &#x1F87A;
-            </button>
-          </h2>
-        </div>
+        <ActorCard actor={actors[currentActorIndex]} />
+      </div>
+      <div className=" w-full flex justify-center"> 
+        <ActorControls
+          currentIndex={currentActorIndex}
+          totalActors={actors.length}
+          onNext={handleNext}
+          onPrevious={handlePrevious}
+        />
       </div>
     </div>
   );
 }
+
+// I forgot what this is for
+
+// <div className="absolute bottom-2 w-full flex justify-center"> 
+//         <ActorControls
+//           currentIndex={currentActorIndex}
+//           totalActors={actors.length}
+//           onNext={handleNext}
+//           onPrevious={handlePrevious}
+//         />
+//       </div>

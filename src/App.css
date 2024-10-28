@@ -7,7 +7,7 @@
 
 html, body {
   margin: 0;
-  background-color: #1B1C1E;
+  /* background-color: #1B1C1E; */
   /* background-image: url('./Images/Optimiserable_Background.jpg');
   background-size: cover;
   background-position: center;
@@ -38,13 +38,13 @@ color: #E4CC5D;
 }
 
 .section {
-  height: 100vh; /* Full viewport height */
+  height: 100vh; 
   display: flex;
   justify-content: center;
   align-items: center;
   
-  scroll-snap-align: start; /* Optional smooth snap */
-  transition: transform 0.5s ease-in-out; /* Smooth scrolling transition */
+  scroll-snap-align: start; 
+  transition: transform 0.5s ease-in-out;
 }
 
 

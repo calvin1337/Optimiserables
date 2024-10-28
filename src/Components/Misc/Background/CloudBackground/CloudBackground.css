@@ -1,0 +1,58 @@
+#Clouds {
+    position: absolute;
+    top: 0; 
+    right: 0; 
+    bottom: 0; 
+    left: 0;
+    margin: auto;
+    height: 100vh; 
+    overflow: hidden;
+    animation: FadeIn 3.1s ease-out;
+    user-select: none;
+    background-color: rgba(135, 206, 235, 0.5); 
+    z-index: -1;
+}
+
+.Cloud { 
+    position: absolute;
+    width: 100%; 
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    height: 70px; 
+    background-color: rgba(255, 255, 255, 1); 
+    animation-duration: 120s; 
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-name: Float, FadeFloat;
+    z-index: 1;
+}
+
+@keyframes FadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.Cloud.Foreground { 
+    height: 10%;
+    min-height: 20px;
+    z-index: 3;
+}
+
+.Cloud.Background { 
+    height: 9%; 
+    min-height: 8px;
+    animation-duration: 120s * 1.75; 
+}
+
+@keyframes Float {
+    from { transform: translateX(100%); }
+    to { transform: translateX(-15%); }
+}
+
+@keyframes FadeFloat {
+    0%, 100% { opacity: 0; }
+    5%, 90% { opacity: 1; }
+}
+
+

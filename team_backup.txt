@@ -1,0 +1,148 @@
+import React, { useEffect, useState, useRef } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTshirt, faLink } from '@fortawesome/free-solid-svg-icons';
+import useToggleInterval from "../../../Hooks/useToggleInterval";
+import useChatBubble from "../../../Hooks/useChatBubble";
+
+function ActorDetails({ actor }) {
+  const [currentImage, setCurrentImage] = useState(actor.src);
+  const [currentStyle, setCurrentStyle] = useState("");
+  const [isWardrobeOpen, setIsWardrobeOpen] = useState(false);
+  const showText = useToggleInterval(3000);
+  const ref = useRef(null); 
+
+  const messages = [
+    "You here for the Panty Raid? Click here",
+    "Strip-tease!",
+    "This Is Where I Keep My Junk",
+    "Come See My Man Cave",
+    "Man-hole Cover",
+  ];
+
+  const { showBubble, bubbleMessage } = useChatBubble(ref, messages);
+
+  // Wardrobe
+  useEffect(() => {
+    setCurrentImage(actor.src);
+    setCurrentStyle("");
+    setIsWardrobeOpen(false); 
+  }, [actor]);
+
+  const wardrobeClick = (src, style) => {
+    setCurrentImage(src);
+    setCurrentStyle(style || "");
+  };
+
+  const toggleWardrobe = () => {
+    setIsWardrobeOpen(!isWardrobeOpen);
+  };
+
+  return (
+    <div ref={ref} className="flex flex-col sm:flex-row justify-start w-full max-w-4xl mx-auto border-2 border-white">
+      {/* Image and wardrobe button */}
+      <div className="flex flex-col justify-start items-center sm:mr-8 mb-4 sm:mb-0">
+        <div className="relative flex-shrink-0 w-64 h-48 sm:w-80 sm:h-60"> 
+          <img
+            className={`w-full h-full object-contain border-2 border-[#6A3276]/50 ${currentStyle}`}
+            src={currentImage}
+            alt={actor.name}
+          />
+          <div
+            className="absolute bottom-2 right-2 flex items-center justify-center"
+            style={{
+              width: '36px',
+              height: '36px',
+              borderRadius: '50%',
+              backgroundColor: 'white',
+              boxShadow: '0 2px 4px rgba(0, 0, 0, 0.2)',
+              transition: 'background-color 0.1s, box-shadow 0.1s',
+            }}
+          >
+            <FontAwesomeIcon
+              icon={faTshirt}
+              className={`${isWardrobeOpen ? 'text-black' : 'text-blue-500'}`}
+              style={{
+                fontSize: '14px',
+                transition: 'color 0.1s',
+              }}
+              onClick={toggleWardrobe}
+            />
+          </div>
+
+          {/* Speech Bubble */}
+          {showBubble && (
+            <div className="relative flex items-center">
+              <div className="absolute bottom-2 right-8 bg-white border border-black rounded shadow-lg p-2">
+                <p className="text-black text-xs">{bubbleMessage}</p>
+              </div>
+            </div>
+          )}
+        </div>
+
+        {/* Social Links */}
+        {actor.socials && actor.socials.length > 0 && (
+          <div className="bg-[#6A3276]/50 w-full">
+            <div className="flex justify-center items-center w-full" style={{ height: '40px' }}>
+              <ul className="flex space-x-3 justify-center">
+                {actor.socials.map((social, index) => (
+                  <li key={index}>
+                    <a
+                      href={social.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center bg-transparent border-2 border-white text-white rounded-full transition-colors duration-200 hover:bg-blue-700 hover:border-transparent"
+                      style={{
+                        fontSize: '0.7em',
+                        padding: '0.2em 0.4em',
+                        width: 'fit-content',
+                      }}
+                    >
+                      {showText ? (
+                        <>{social.platform}</>
+                      ) : (
+                        <FontAwesomeIcon
+                          icon={faLink}
+                          className="ml-1"
+                          style={{ width: '16px', height: '16px', fontSize: '1em', lineHeight: '0', margin: '0', padding: '0' }}
+                        />
+                      )}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        )}
+      </div>
+
+      {/* Text Section */}
+      <div className="w-full sm:w-3/5 text-left px-4">
+        <h2 className="text-2xl sm:text-3xl font-semibold mb-2">{actor.name}</h2>
+        <p className="text-white mb-4 text-sm sm:text-base">{actor.bio || "No bio available."}</p>
+
+        {/* Wardrobe */}
+        {isWardrobeOpen && actor.wardrobe && actor.wardrobe.length > 0 ? (
+          <div className="mt-4">
+            <h3 className="text-md font-semibold mb-2">Wardrobe</h3>
+            <div className="flex space-x-2 overflow-x-auto">
+              {actor.wardrobe.map((outfit, index) => (
+                <img
+                  key={index}
+                  src={outfit.src}
+                  alt={`Wardrobe ${index + 1}`}
+                  className={`object-contain border-2 ${outfit.className} cursor-pointer`}
+                  style={{ width: '48px', height: '48px' }} 
+                  onClick={() => wardrobeClick(outfit.src, outfit.className)}
+                />
+              ))}
+            </div>
+          </div>
+        ) : (
+          isWardrobeOpen && <p className="text-sm">No wardrobe options available.</p>
+        )}
+      </div>
+    </div>
+  );
+}
+
+export default ActorDetails;

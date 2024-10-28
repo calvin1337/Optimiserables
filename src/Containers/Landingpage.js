@@ -8,12 +8,13 @@ export default function Home() {
   return (
 
     <div className='container flex flex-col items-center justify-center w-full overflow-hidden'>
+       
         <div 
       className="bg-contain bg-no-repeat bg-center h-screen w-screen"
       style={{ backgroundImage: `url(${cats})` }}
       >
     </div>
-
+    
       {/* <div className="fixed bottom-0 left-0 p-4 flex space-x-4 lg:hidden">
       <div className='sm: flex col gap-2'>
         <a href="https://www.instagram.com/optimiserables/" target="_blank" rel="noreferrer" className='socialLink'>

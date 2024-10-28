@@ -1,6 +1,6 @@
 import React from 'react'
 import Button from '../Components/Misc/Button'
-import {faFacebookSquare, faInstagram, faTiktok, faXTwitter } from '@fortawesome/free-brands-svg-icons'
+import {faFacebookSquare, faInstagram, faTiktok, faXTwitter } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
@@ -8,6 +8,8 @@ export default function Home() {
   return (
     
     <div className='container flex flex-col items-center justify-center w-5/6 page h-screen'>
+      
+       
       <h1 className='lg:text-8xl'>
         Exciting things are on the horizon...
       </h1>
@@ -21,6 +23,7 @@ export default function Home() {
                 className="w-full p-3 text-lg border-3 border-[#6A3276] rounded-md"
                 placeholder='Enter your email'
               />
+             
             </div>
           </div> 
           <div className='flex-2'>
@@ -30,7 +33,7 @@ export default function Home() {
           </div>
         </form>
       </div>
-      <div className="fixed bottom-0 left-0 p-4 flex space-x-4 lg:hidden">
+      {/* <div className="fixed bottom-0 left-0 p-4 flex space-x-4 lg:hidden">
       <div className='sm: flex col gap-2'>
         <a href="https://www.instagram.com/optimiserables/" target="_blank" rel="noreferrer" className='socialLink'>
           <FontAwesomeIcon icon={faInstagram} size="2x" color='#ebbc52'/>
@@ -45,7 +48,7 @@ export default function Home() {
           <FontAwesomeIcon icon={faXTwitter} size="2x" color='#ebbc52'/>
           </a>
       </div>
-      </div>
+      </div> */}
       {/* <div className="fixed bottom-0 right-0 p-4 flex space-x-4">
         https://www.edfringe.com/take-part/putting-on-a-show/marketing-and-promotion#fringe-logos 
         <div className="lg:w-40 lg:h-20 h-10">

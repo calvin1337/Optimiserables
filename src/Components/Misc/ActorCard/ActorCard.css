@@ -1,0 +1,64 @@
+.actor-card {
+    width: 300px;
+    height: 420px;
+    border-radius: 8px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+    transition: box-shadow 0.3s ease, transform 0.5s ease;
+  }
+  .hover-image {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .hover-image:hover {
+    transform: scale(1.05); 
+    opacity: 0.9; 
+  }
+  .actor-card::before,
+  .actor-card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-size: 200% 200%;
+    mix-blend-mode: color-dodge;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+  
+  .actor-card::before {
+    background: linear-gradient(
+      115deg,
+      transparent 20%,
+      var(--color1) 36%,
+      transparent 47%,
+      var(--color2) 75%,
+      transparent 100%
+    );
+    background-position: var(--gradient-x, 50%) var(--gradient-y, 50%);
+    opacity: 0.5;
+    z-index: 1;
+  }
+  
+  .actor-card::after {
+    background-image: url("https://assets.codepen.io/13471/sparkles.gif"),
+      linear-gradient(
+        125deg,
+        #ff008450 15%,
+        #fca40040 30%,
+        #ffff0030 40%,
+        #00ff8a20 60%,
+        #00cfff40 70%,
+        #cc4cfa50 85%
+      );
+    opacity: 0.75;
+    background-position: var(--gradient-x, 50%) var(--gradient-y, 50%);
+    z-index: 2;
+  }
+  
