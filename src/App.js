@@ -40,7 +40,7 @@ function App() {
       <div id="section-3" className="section">
         <UpcomingShows />
       </div>
-      <div id="section-4" className="section">
+      <div id="section-4">
         <Team />
       </div>
       <div id="section-5" className="section">

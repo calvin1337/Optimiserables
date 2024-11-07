@@ -1,16 +1,18 @@
 @import url("https://fonts.googleapis.com/css?family=Merriweather:400,700");
 
 .character {
-  margin-bottom: 4px;
-  max-height: 120px;
-  /* max-height: 100px; */
   align-self: stretch;
   background: rgba(106, 50, 118, 0.5);
   cursor: pointer;
   position: relative;
   text-align: center;
-  width: 160px;
-  /* width: 120px; */
+  width: 100%;
+  height: 100%;
+}
+.character__img {
+  filter: grayscale(0.84);
+  width: 100%;
+  height: 100%;
 }
 
 .character__name {
@@ -26,13 +28,7 @@
   padding: 0;
 }
 
-.character__img {
-  filter: grayscale(0.84);
-  height: 120px;
-  /* height: 100px; */
-  width: 100%;
-  object-fit: cover;
-}
+
 
 .character.active {
   transform: scale(1.05);
@@ -98,7 +94,7 @@
   outline: 4px solid #e4cc5d;
 }
 
-.div1 {
+/* .div1 {
   grid-area: 1 / 1 / 2 / 2;
 }
 .div2 {
@@ -121,7 +117,7 @@
 }
 .div8 {
   grid-area: 2 / 4 / 3 / 5;
-}
+} */
 
 @keyframes flash {
   0% {

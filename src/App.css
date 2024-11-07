@@ -42,7 +42,6 @@ color: #E4CC5D;
   display: flex;
   justify-content: center;
   align-items: center;
-  
   scroll-snap-align: start; 
   transition: transform 0.5s ease-in-out;
 }
@@ -131,4 +130,11 @@ form label{
 
 .active{
   color: #E4CC5D;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); 
+  /* gap: 16px;  */
+  grid-auto-rows: minmax(100px, auto); 
 }

@@ -11,7 +11,7 @@ const ActorImage = ({
 }) => {
   console.log("Rendering ActorImage with src:", currentImage);
   return (
-    <div className="relative flex-shrink-0 w-64 h-48 sm:w-80 sm:h-60">
+    <div className="flex-shrink-0 w-64 h-48 sm:w-80 sm:h-60">
       <img
         className={`w-full h-full object-contain border-2 border-[#6A32776]/50`}
         src={`${currentImage}?t=${new Date().getTime()}`}

@@ -61,11 +61,11 @@ export default function WhoAreWe() {
   };
 
   return (
-    <div className="relative container flex flex-col items-center w-full h-full"> 
-      <div className="flex flex-col md:flex-row w-full">
+    <div className="flex flex-col items-center w-full h-full"> 
+      <div className="flex flex-col md:flex-row w-4/5 h-full">
         <ActorCard actor={actors[currentActorIndex]} />
       </div>
-      <div className=" w-full flex justify-center"> 
+      <div className="w-full flex justify-center sm:h-full"> 
         <ActorControls
           currentIndex={currentActorIndex}
           totalActors={actors.length}
