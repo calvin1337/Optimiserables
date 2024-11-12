@@ -61,7 +61,7 @@ export default function WhoAreWe() {
   };
 
   return (
-    <div className="flex flex-col items-center w-full h-full"> 
+    <div className="flex flex-col items-center w-screen h-screen"> 
       <div className="flex flex-col md:flex-row w-4/5 h-full">
         <ActorCard actor={actors[currentActorIndex]} />
       </div>

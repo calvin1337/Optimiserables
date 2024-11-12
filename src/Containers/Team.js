@@ -9,6 +9,26 @@ function Team() {
 
   const handleActorClick = (index) => {
     setActiveActor(index);
+    console.log(index)
+  };
+
+  const randomSelect = () => {
+    const delay = 100; // Delay in milliseconds
+    const maxSelections = 10;
+
+    const selectRandomActor = (count) => {
+      if (count < maxSelections) {
+        setTimeout(() => {
+          const randomIndex = Math.floor(Math.random() * actors.length);
+          setActiveActor(randomIndex);
+          selectRandomActor(count + 1);
+        }, delay);
+      } else {
+        setSelectionCount(0); // Reset the selection count after reaching the limit
+      }
+    };
+
+    selectRandomActor(selectionCount);
   };
 
   const actors = [
@@ -112,8 +132,10 @@ function Team() {
 
   return (
     <div className="flex flex-col items-center w-screen h-screen">
-    <ActorDetails />
-    <ActorSelect actors={actors} />
+    {actors.length > 0 && actors[activeActor] && (
+        <ActorDetails actor={actors[activeActor]} />
+      )}
+    <ActorSelect actors={actors} isActive={activeActor} handleClick={(e) => handleActorClick(e)} randomActor={() => randomSelect()}/>
   </div>
   )
 }

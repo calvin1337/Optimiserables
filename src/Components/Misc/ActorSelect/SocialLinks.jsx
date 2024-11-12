@@ -4,7 +4,8 @@ import { faLink } from "@fortawesome/free-solid-svg-icons";
 import useToggleInterval from "../../../Hooks/useToggleInterval";
 
 const SocialLinks = ({ socials }) => {
-  const showText = useToggleInterval(3000);
+  // const showText = useToggleInterval(3000);
+  const showText = true;
 
   return (
     socials &&
