@@ -13,7 +13,7 @@ html, body {
   background-position: center;
   background-attachment: fixed; */
   padding: 0;
-  overflow: hidden;
+
 }
 
 button{
@@ -37,25 +37,43 @@ color: #E4CC5D;
   
 }
 
-.section {
-  height: 100vh; 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-  scroll-snap-align: start; 
-  transition: transform 0.5s ease-in-out;
-}
 
 
 h1{
   font-family: "Luckiest Guy";
-  color: #6A3276;
+  color: #ffd573;
   font-size: 42px;
+  text-shadow:
+  3px 3px 2px #000,
+  -3px 3px 2px #000,
+  -3px -3px 0 #000,
+  3px -3px 0 #000,
+    1px 1px 2px black,
+    0px 5px 1px #e3af34,
+    0px 10px 1px #6A3276;
 }
 
+/* text-shadow:
+  3px 3px 2px #000,
+  -3px 3px 2px #000,
+  -3px -3px 0 #000,
+  3px -3px 0 #000,
+    1px 1px 2px black,
+    0px 5px 1px #e3af34,
+    0px 10px 1px #6A3276; */
+  
+
 h2{
-  color: #6A3276;
+  color: #ffd573;
+  font-family: "Poetsen One", sans-serif;
+  text-shadow:
+    1px 1px 2px black,
+    0px 2px 1px #e3af34,
+    0px 4px 1px #6A3276;
+}
+
+p {
+  font-size: 8px;
   font-family: "Poetsen One", sans-serif;
 }
 
@@ -84,8 +102,6 @@ h2{
   /* border: 1px solid #000;  */
   width: 100%;
 }
-
-
 
 
 form .formField{
@@ -132,3 +148,5 @@ form label{
 .active{
   color: #E4CC5D;
 }
+
+

@@ -1,5 +1,5 @@
 
-.button{
+/* .button{
  
   display: inline-block;
   outline: 0;
@@ -17,7 +17,57 @@
   transition-duration: .15s;
   transition-property: all;
   transition-timing-function: cubic-bezier(.4,0,.2,1);
+} */
+
+.button {
+  z-index: 1;
+  position: relative;
+  display: inline-block;
+  outline: 0;
+  cursor: pointer;
+  border: 2px solid black;
+  border-radius: 3px;
+  color: #000;
+  /* background: #6A3276; */
+  /* background: #ffd573cc; */
+  background: rgb(229, 229, 229);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  padding: 12px 20px;
+  width: 100%;
+  text-align:center;
+  transition-duration: .15s;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(.4,0,.2,1);
 }
+.button:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  background-color: #ffd573;
+  border: 2px solid #ffd573;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  transition: all 0.3s ease;
+}
+.button:hover {
+  color: #fff;
+}
+.button:hover:after {
+  right: 0;
+  width: 100%;
+}
+.button:active {
+  top: 2px;
+}
+
+
 
 /* .button:hover{
   color: #000;
@@ -31,3 +81,4 @@ button:disabled {
   cursor: not-allowed;
   border:none
 }
+

@@ -46,6 +46,7 @@ function App() {
       <div id="section-5" className="section">
         {/* <CubeLoader /> */}
         <Contact />
+        
       </div>
       
     </div>

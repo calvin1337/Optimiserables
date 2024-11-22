@@ -6,6 +6,7 @@ export default function Contact() {
     <div className="w-full flex justify-center page">
       <Form />
       {/* <Footer /> */}
+      
     </div>
   )
 }
