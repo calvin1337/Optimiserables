@@ -21,16 +21,21 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease, transform 0.2s ease;
   position: relative;
   overflow: hidden;
   margin-bottom: 20px;
+  box-shadow:
+    1px 1px 2px black,
+    0px 1px 5px black,
+    0px 1px 10px #572961;
+    transform: scale(1);
 }
 
 .navMenu li.active {
   background-color: #703b71; 
   color: #fff; 
-  
+  box-shadow: 0 0 15px rgba(112, 59, 113, 0.7);
 }
 
 .navMenu li:hover {
@@ -38,6 +43,9 @@
   color: #fff; 
   width: 100px; 
   border-radius: 25px; 
+  transform: translateX(8px) scale(1.1);
+  background: linear-gradient(145deg, #8c4b8e, #703b71);
+  box-shadow: 4px 4px 12px rgba(87, 41, 97, 0.5);
 }
 
 .navMenu li .navText {

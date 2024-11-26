@@ -6,7 +6,7 @@ const getRandomBoxShadow = (n) => {
   for (let i = 0; i < n; i++) {
     const x = Math.floor(Math.random() * 2000);
     const y = Math.floor(Math.random() * 2000);
-    shadows.push(`${x}px ${y}px #FFF`);
+    shadows.push(`${x}px ${y}px #e3af34`);
   }
   return shadows.join(', ');
 };

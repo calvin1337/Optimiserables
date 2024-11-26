@@ -2,7 +2,7 @@ import WhoAreWe from "../Components/WhoAreWe/WhoAreWe"
 
 export default function Test() {
   return (
-    <div className="w-full h-full flex border-2 border-y-orange-500 justify-center page">
+    <div className="w-full h-full flex  justify-center page">
       <WhoAreWe />
     </div>
   )

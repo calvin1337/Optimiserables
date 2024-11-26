@@ -3,7 +3,7 @@ import Team from '../Components/Misc/ActorSelect/ActorSelect';
 
 export default function TestTeam() {
   return (
-    <div className="border-2 border-y-orange-500 h-full w-full page">
+    <div className="h-full w-full page">
       <Team />
     </div>
   );
