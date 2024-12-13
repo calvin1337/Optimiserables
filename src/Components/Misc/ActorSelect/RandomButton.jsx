@@ -3,7 +3,7 @@ import React from "react";
 function RandomButton({ onClick }) {
   return (
     <div
-      className="div8 bg-[#6A3276]/50 h-full pt-1 pr-1 pl-1"
+      className="bg-[#6A3276]/50 h-full pt-1 pr-1 pl-1"
       onClick={onClick}
     >
       <div className="character randomHover">

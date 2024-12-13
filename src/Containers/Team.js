@@ -136,6 +136,7 @@ function Team() {
         <ActorDetails actor={actors[activeActor]} />
       )}
     <ActorSelect actors={actors} isActive={activeActor} handleClick={(e) => handleActorClick(e)} randomActor={() => randomSelect()}/>
+  
   </div>
   )
 }

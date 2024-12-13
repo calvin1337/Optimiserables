@@ -41,11 +41,14 @@ function ActorDetails({ actor }) {
   };
 
   return (
-    <div
-      ref={ref}
-      className="flex flex-col sm:flex-row justify-start w-5/6 mx-auto h-1/2 gap-5"
-    >
-      <div className="flex flex-col align-middle sm:justify-start sm:items-center sm:mr-8 mb-4 sm:mb-0 h-2/3 sm:h-full sm:w-2/3 md:1/3 p-5">
+    <div className="w-5/6 mx-auto h-1/2 sm:h-1/2 border-red-800 border flex flex-col p-4 box-border overflow-hidden">
+    <h1 className="font-bold mb-4 text-center text-3xl md:text-6xl lg:text-8xl">
+      Meet the Crew
+    </h1>
+    <div className="flex flex-col md:flex-row gap-5 h-full">
+      {/* Top Child (left) */}
+      <div className="bg-blue-400 p-4 text-white flex-1 md:w-1/2 h-full overflow-hidden">
+        <div className="h-full overflow-y-auto">
         <ActorImage
           currentImage={currentImage}
           toggleWardrobe={toggleWardrobe}
@@ -53,18 +56,18 @@ function ActorDetails({ actor }) {
           showBubble={showBubble}
           bubbleMessage={bubbleMessage}
         />
-        <SocialLinks socials={actor.socials} />
+        </div>
       </div>
-      <div className="flex flex-col sm:w-2/3 w-full">
-        <ActorInfo name={actor.name} bio={actor.bio} />
-        {isWardrobeOpen && (
-          <div className="absolute inset-0 bg-black bg-opacity-50 z-10 flex items-center justify-center">
-            <Wardrobe wardrobe={actor.wardrobe} wardrobeClick={wardrobeClick} />
-          </div>
-        )}
+
+      {/* Bottom Child (right) */}
+      <div className="bg-green-400 p-4 text-white flex-1 md:w-1/2 h-full overflow-hidden">
+        <div className="h-full overflow-y-auto">
+          <ActorInfo name={actor.name} bio={actor.bio} />
+        </div>
       </div>
     </div>
-  );
+  </div>
+  )
 }
 
 export default ActorDetails;
