@@ -47,7 +47,7 @@ function ActorDetails({ actor }) {
     </h1>
     <div className="flex flex-col md:flex-row gap-5 h-full">
       {/* Top Child (left) */}
-      <div className="bg-blue-400 p-4 text-white flex-1 md:w-1/2 h-full overflow-hidden">
+      <div className="p-4 text-white flex-1 md:w-1/2 h-full overflow-hidden">
         <div className="h-full overflow-y-auto">
         <ActorImage
           currentImage={currentImage}
@@ -60,7 +60,7 @@ function ActorDetails({ actor }) {
       </div>
 
       {/* Bottom Child (right) */}
-      <div className="bg-green-400 p-4 text-white flex-1 md:w-1/2 h-full overflow-hidden">
+      <div className="p-4 text-white flex-1 md:w-1/2 h-full overflow-hidden">
         <div className="h-full overflow-y-auto">
           <ActorInfo name={actor.name} bio={actor.bio} />
         </div>

@@ -7,10 +7,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 export default function Home() {
   return (
 
-    <div className='container flex flex-col items-center justify-center w-full overflow-hidden'>
+    <div className='container flex flex-col items-center justify-center overflow-hidden h-screen w-screen'>
        
         <div 
-      className="bg-contain bg-no-repeat bg-center h-screen w-screen"
+      className="bg-contain bg-no-repeat bg-center  w-full h-full"
       style={{ backgroundImage: `url(${cats})` }}
       >
     </div>

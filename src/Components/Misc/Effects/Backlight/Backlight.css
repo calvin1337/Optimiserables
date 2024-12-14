@@ -9,6 +9,8 @@
     background: linear-gradient(270deg, #F1C570, #703B71);
     background-size: 200% 200%;
     animation: animateGlow 10s ease infinite;
+    width: 100%; 
+    height: 100%; 
   }
   
   @keyframes animateGlow {

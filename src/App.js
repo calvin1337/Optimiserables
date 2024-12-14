@@ -15,9 +15,11 @@ import CloudBackground from './Components/Misc/Background/CloudBackground/CloudB
 import Test from './Containers/Test';
 import UpcomingShows from './Containers/UpcomingShows';
 import TestTeam from './Containers/TestTeam'
+import Members from './Containers/Members';
+
 function App() {
 
-  const sections = ['Landingpage', 'Home', 'WhoAreWe', 'Upcoming', 'Team', 'Contact'];
+  const sections = ['Landingpage', 'Home', 'WhoAreWe', 'Members', 'Upcoming', 'Team', 'Contact'];
   CustomScroll(sections.length);
   const currentSection = CustomScroll(sections.length);
 
@@ -38,13 +40,16 @@ function App() {
         <Test />
       </div>
       <div id="section-3" className="section">
+        <Members />
+      </div>
+      <div id="section-4" className="section">
         <UpcomingShows />
       </div>
-      <div id="section-4">
+      <div id="section-5">
         <Team />
       </div>
-      <div id="section-5" className="section">
-        {/* <CubeLoader /> */}
+      <div id="section-6" className="section">
+        
         <Contact />
       </div>
       

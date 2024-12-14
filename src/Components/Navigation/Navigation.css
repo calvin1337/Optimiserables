@@ -62,7 +62,7 @@
 .logoContainer {
   position: fixed;
   top: 20px;
-  right: 20px;
+  left: 20px;
   z-index: 100;
 }
 
@@ -75,7 +75,7 @@
     display: none;
   }
 
-  .logoContainer {
+  /* .logoContainer {
     display: none;
-  }
+  } */
 }
