@@ -7,7 +7,7 @@ const OPCard = ({ actor }) => {
   const imagePath = require(`../../Images/Members/optimiserablesframe1.png`);
   
   return (
-    <div className="flex flex-col md:flex-row gap-5 h-screen sm:items-center justify-center pt-20 sm:pt-0">
+    <div className="flex flex-col md:flex-row-reverse gap-5 h-screen sm:items-center justify-center pt-20 sm:pt-0">
     {/* Image Container */}
     <div className="w-full md:w-1/2 flex justify-center items-center">
 
@@ -16,7 +16,7 @@ const OPCard = ({ actor }) => {
     Backlight causes sizing issues with the images
     
     */}
-    
+
       <Backlight>
         <img
           src={imagePath}
