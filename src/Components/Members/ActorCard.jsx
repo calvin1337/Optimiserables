@@ -1,5 +1,4 @@
 import React from 'react';
-import Backlight from '../Misc/Effects/Backlight/Backlight';
 import "../../Components/Misc/Effects/Backlight/Backlight.css"
 
 import {faFacebookSquare, faInstagram, faTiktok, faXTwitter } from '@fortawesome/free-brands-svg-icons'
@@ -9,10 +8,10 @@ const ActorCard = ({ actor }) => {
   const imagePath = require(`../../Images/Members/${actor.image}`);
   
   return (
-  <div className="flex flex-col md:flex-row gap-5 h-4/5 sm:items-center justify-center w-full">
+  <div className="flex flex-col md:flex-row gap-5 h-4/5 items-center justify-center w-full">
   {/* Image Container with Background Effect */}
-  <div className="w-full md:w-1/2 flex flex-col md:flex-col justify-center items-center h-2/5 md:h-4/5 relative p-10">
-    <div className="relative w-full h-full">
+  <div className="w-full md:w-1/2 flex flex-col md:flex-col justify-center items-center h-2/5 md:h-4/5 relative md-p-10">
+    <div className="relative w-4/5 h-full">
       <div className="backlight absolute top-0 left-0 right-0 bottom-0 z-[-1]"></div>
       <img
         src={imagePath}
@@ -31,7 +30,7 @@ const ActorCard = ({ actor }) => {
           rel="noreferrer"
           className="socialLink w-12 h-12 flex justify-center items-center"
         >
-          <FontAwesomeIcon icon={faInstagram} className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl" color="#ebbc52" />
+          <FontAwesomeIcon icon={faInstagram} className="text-2xl sm:text-3xl md:text-4xl xl:text-5xl" color="#ebbc52" />
         </a>
         <a
           href="https://x.com/Optimiserables"
@@ -39,7 +38,7 @@ const ActorCard = ({ actor }) => {
           rel="noreferrer"
           className="socialLink w-12 h-12 flex justify-center items-center"
         >
-          <FontAwesomeIcon icon={faFacebookSquare} className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl" color="#ebbc52" />
+          <FontAwesomeIcon icon={faFacebookSquare} className="text-2xl sm:text-3xl md:text-4xl xl:text-5xl" color="#ebbc52" />
         </a>
         <a
           href="https://www.tiktok.com/@theoptimiserables?lang=en"
@@ -47,7 +46,7 @@ const ActorCard = ({ actor }) => {
           rel="noreferrer"
           className="socialLink w-12 h-12 flex justify-center items-center"
         >
-          <FontAwesomeIcon icon={faTiktok} className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl" color="#ebbc52" />
+          <FontAwesomeIcon icon={faTiktok} className="text-2xl sm:text-3xl md:text-4xl xl:text-5xl" color="#ebbc52" />
         </a>
         <a
           href="https://www.facebook.com/profile.php?id=61557637915188"
@@ -55,24 +54,36 @@ const ActorCard = ({ actor }) => {
           rel="noreferrer"
           className="socialLink w-12 h-12 flex justify-center items-center"
         >
-          <FontAwesomeIcon icon={faXTwitter} className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl" color="#ebbc52" />
+          <FontAwesomeIcon icon={faXTwitter} className="text-2xl sm:text-3xl md:text-4xl xl:text-5xl" color="#ebbc52" />
         </a>
       </div>
       </div>
   </div>
 
   {/* Content Container */}
-  <div className="w-full md:w-1/2 flex justify-center md:items-start h-3/5 md:h-full pt-10">
-    <div className="p-4 flex flex-col text-center gap-2 w-full">
+  <div className="w-full md:w-1/2 flex h-2/5 md:h-full md:pt-10 ">
+    <div className="p-4 flex flex-col text-center gap-2 w-full h-full ">
       
-      <h2 className='text-left text-sm sm:text-1xl md:text-2xl lg:text-3xl'>About:</h2>
-      <p className="text-xs sm:text-base md:text-xl lg:text-2xl text-white w-full md:text-left">
-        {actor.description}
-      </p>
-      <h2 className='text-left text-sm sm:text-1xl md:text-2xl lg:text-3xl'>Credits:</h2>
-      <p className="text-xs sm:text-base md:text-xl lg:text-2xl text-white w-full md:text-left">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi aut eaque, sunt corrupti cumque nisi ab pariatur doloribus at dolore.
-      </p>
+      
+      <div className="flex-1 flex items-start flex-col text-justify">
+      <h2 className='text-left text-sm sm:text-xl md:text-2xl lg:text-3xl'>About</h2>
+        <p className="text-xs sm:text-base md:text-l xl:text-xl text-white w-full md:text-left md:pl-5">
+          {actor.description}
+        </p>
+      </div>
+
+      
+      <div className="flex-1 flex items-start flex-col">
+      <h2 className='text-left text-sm sm:text-xl md:text-2xl lg:text-3xl'>Credits</h2>
+      <ul className="text-xs sm:text-base md:text-lg lg:text-xl text-white w-full text-left md:pl-5">
+      {actor.credits.map((credit, index) => (
+        <li className="text-xs sm:text-base md:text-l xl:text-xl text-white w-full text-left" key={index}>
+          {credit}
+        </li>
+      ))}
+    </ul>
+      </div>
+      
     </div>
   </div>
 </div>

@@ -19,7 +19,7 @@ import Members from './Containers/Members';
 
 function App() {
 
-  const sections = ['Landingpage', 'Home', 'WhoAreWe', 'Members', 'Upcoming', 'Team', 'Contact'];
+  const sections = ['Landingpage', 'WhoAreWe', 'Members', 'Upcoming', 'Home', 'Contact'];
   CustomScroll(sections.length);
   const currentSection = CustomScroll(sections.length);
 
@@ -34,21 +34,21 @@ function App() {
         <Landingpage />
       </div>
       <div id="section-1" className="section">
-        <Home />
-      </div>
-      <div id="section-2" className="section">
         <Test />
       </div>
-      <div id="section-3" className="section">
+      <div id="section-2" className="section">
         <Members />
       </div>
-      <div id="section-4" className="section">
+      <div id="section-3" className="section">
         <UpcomingShows />
       </div>
-      <div id="section-5">
-        <Team />
+      <div id="section-4" className="section">
+        <Home />
       </div>
-      <div id="section-6" className="section">
+      {/* <div id="section-5">
+        <Team />
+      </div> */}
+      <div id="section-5" className="section">
         
         <Contact />
       </div>

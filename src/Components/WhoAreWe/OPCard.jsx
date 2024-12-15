@@ -8,28 +8,22 @@ const OPCard = ({ actor }) => {
   
   return (
     <div className="flex flex-col md:flex-row-reverse gap-5 h-screen sm:items-center justify-center pt-20 sm:pt-0">
-    {/* Image Container */}
-    <div className="w-full md:w-1/2 flex justify-center items-center">
-
-    {/* 
-    
-    Backlight causes sizing issues with the images
-    
-    */}
-
-      <Backlight>
-        <img
-          src={imagePath}
-          alt="Op Cover"
-          className="hover-image object-cover w-full max-w-xs sm:max-w-sm md:max-w-lg lg:max-w-xl h-auto mx-auto"
-        />
-      </Backlight>
+    {/* Image Container with Background Effect */}
+  <div className="w-full md:w-1/2 flex flex-col md:flex-col justify-center items-center h-2/5 md:h-4/5 relative md-p-10">
+    <div className="relative w-4/5 h-full">
+      <div className="backlight absolute top-0 left-0 right-0 bottom-0 z-[-1]"></div>
+      <img
+        src={imagePath}
+        alt="Op Cover"
+        className="hover-image object-fill w-full h-full mx-auto"
+      />
+    </div>
     </div>
   
     {/* Content Container */}
     <div className="w-full md:w-1/2 flex justify-center">
       <div className="p-4 flex flex-col text-center md:text-left gap-5 w-full">
-        <h1 className="text-xl sm:text-4xl lg:text-6xl">Who Are The Optimiserables?</h1>
+        <h1 className="text-xl sm:text-2xl lg:text-4xl">Who Are The Optimiserables?</h1>
         <p className="text-xs sm:text-lg md:text-xl lg:text-2xl text-white w-full">
           "We the Optimiserables agree that out there in the big wide world that it is indeed a bit naff. While we can't cure all known diseases or solve verbal disagreements in regards to pizza toppings, our goal is to take you on a trip and laugh about the simple things in life."
         </p>

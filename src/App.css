@@ -81,6 +81,10 @@ p {
   font-family: "Poetsen One", sans-serif;
 }
 
+li {
+  font-family: "Poetsen One", sans-serif;
+}
+
 .inputContainer{
   display: flex;
   justify-items: center;
