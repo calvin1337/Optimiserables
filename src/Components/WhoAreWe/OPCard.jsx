@@ -18,11 +18,13 @@ const OPCard = ({ actor }) => {
         className="hover-image object-fill w-full h-full mx-auto"
       />
     </div>
-    </div>
+    </div> 
+
   
     {/* Content Container */}
     <div className="w-full md:w-1/2 flex justify-center">
-      <div className="p-4 flex flex-col text-center md:text-left gap-5 w-full">
+      <div className="p-4 md:p-0 flex flex-col text-center md:text-left gap-5 w-full">
+        
         <h1 className="text-xl sm:text-2xl lg:text-4xl">Who Are The Optimiserables?</h1>
         <p className="text-xs sm:text-lg md:text-xl lg:text-2xl text-white w-full">
           "We the Optimiserables agree that out there in the big wide world that it is indeed a bit naff. While we can't cure all known diseases or solve verbal disagreements in regards to pizza toppings, our goal is to take you on a trip and laugh about the simple things in life."
@@ -34,7 +36,7 @@ const OPCard = ({ actor }) => {
           href="https://www.instagram.com/optimiserables/"
           target="_blank"
           rel="noreferrer"
-          className="socialLink w-12 h-12 flex justify-center items-center"
+          className="socialLink w-8 h-8 sm:w-12 sm:h-12 flex justify-center items-center"
         >
           <FontAwesomeIcon icon={faInstagram} className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl" color="#ebbc52" />
         </a>
@@ -42,7 +44,7 @@ const OPCard = ({ actor }) => {
           href="https://x.com/Optimiserables"
           target="_blank"
           rel="noreferrer"
-          className="socialLink w-12 h-12 flex justify-center items-center"
+          className="socialLink w-8 h-8 sm:w-12 sm:h-12 flex justify-center items-center"
         >
           <FontAwesomeIcon icon={faFacebookSquare} className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl" color="#ebbc52" />
         </a>
@@ -50,7 +52,7 @@ const OPCard = ({ actor }) => {
           href="https://www.tiktok.com/@theoptimiserables?lang=en"
           target="_blank"
           rel="noreferrer"
-          className="socialLink w-12 h-12 flex justify-center items-center"
+          className="socialLink w-8 h-8 sm:w-12 sm:h-12 flex justify-center items-center"
         >
           <FontAwesomeIcon icon={faTiktok} className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl" color="#ebbc52" />
         </a>
@@ -58,7 +60,7 @@ const OPCard = ({ actor }) => {
           href="https://www.facebook.com/profile.php?id=61557637915188"
           target="_blank"
           rel="noreferrer"
-          className="socialLink w-12 h-12 flex justify-center items-center"
+          className="socialLink w-8 h-8 sm:w-12 sm:h-12 flex justify-center items-center"
         >
           <FontAwesomeIcon icon={faXTwitter} className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl" color="#ebbc52" />
         </a>

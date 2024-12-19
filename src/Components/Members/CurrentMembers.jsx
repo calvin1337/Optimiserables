@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import ActorCard from "./ActorCard";
-import ActorControls from "./ActorControls";
+import ActorControls from "./ActorControls"; 
 
 const actors = [
   {
@@ -61,21 +61,39 @@ export default function CurrentMembers() {
   };
 
   return (
-    <div className="flex flex-col items-center w-screen h-screen "> 
-      <div className="flex flex-col w-full md:w-5/6 h-full pt-5 pb-5">
-        <div className='w-full flex justify-center items-center' style={{ height: "10%" }}>
-            <h1 className="text-2xl sm:text-3xl xl:text-5xl">Meet the actors!</h1>
-        </div>
-        <ActorCard actor={actors[currentActorIndex]} />
-        <div className="w-full flex justify-center items-center" style={{ height: "10%" }}> 
-        <ActorControls
-          currentIndex={currentActorIndex}
-          totalActors={actors.length}
-          onNext={handleNext}
-          onPrevious={handlePrevious}
-        />
-        </div>
-      </div>
+    <div className="flex flex-col items-center w-screen h-screen relative">
+  <div className="flex flex-col w-full md:w-5/6 h-full pt-5 pb-5">
+    <div className="w-full flex justify-center items-center" style={{ height: "10%" }}>
+      <h1 className="text-2xl sm:text-3xl xl:text-5xl">Meet the actors!</h1>
     </div>
+    <ActorCard actor={actors[currentActorIndex]} />
+    <div className="w-full flex justify-center items-center" style={{ height: "10%" }}>
+      <h2 className="text-lg sm:text-xl lg:text-2xl w-full flex justify-evenly md:justify-evenly items-center mt-4 md:mt-0">
+        <span>
+          {currentActorIndex + 1} / {actors.length}
+        </span>
+      </h2>
+    </div>
+  </div>
+
+  {/* Left Arrow */}
+  <button
+    onClick={handlePrevious}
+    className="absolute left-4 bottom-4 md:bottom-auto md:top-1/2 transform md:-translate-y-1/2 text-white p-2 rounded hover:opacity-8 z-10"
+    style={{ backgroundColor: "#F1C570" }}
+  >
+    &#x1F878;
+  </button>
+
+  {/* Right Arrow */}
+  <button
+    onClick={handleNext}
+    className="absolute right-4 bottom-4 md:bottom-auto md:top-1/2 transform md:-translate-y-1/2 text-white p-2 rounded hover:opacity-8 z-10"
+    style={{ backgroundColor: "#F1C570" }}
+  >
+    &#x1F87A;
+  </button>
+</div>
+
   );
 }

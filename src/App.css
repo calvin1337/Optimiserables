@@ -165,3 +165,50 @@ form label{
   /* gap: 16px;  */
   grid-auto-rows: minmax(100px, auto); 
 }
+
+.arrow-container {
+  display: flex;
+  justify-content: center;
+  align-items:end;
+  height: 100vh;
+  padding-bottom: 5%;
+}
+
+.arrow {
+  display: block;
+  width: 3rem;
+  height: 3rem;
+  border: 0.5rem solid #E4CC5D;
+  border-left: none;
+  border-top: none;
+  transform-origin: 50% 50%;
+  transform: rotate(45deg);
+  animation: arrowMove 2s infinite;
+
+}
+
+
+@keyframes arrowMove {
+  to {
+    transform: rotate(45deg) translateY(2rem) translateX(2rem);
+    opacity: 0;
+ }
+}
+@keyframes navArrowMove {
+  to {
+    transform: translateX(2rem);
+    opacity: 0;
+ }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}

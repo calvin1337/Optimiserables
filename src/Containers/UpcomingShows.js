@@ -4,7 +4,7 @@ import Upcoming from '../Components/Upcoming/Upcoming';
 export default function UpcomingShows() {
   return (
     <div className="h-full w-full page">
-      {/* <Upcoming /> */}
+      <Upcoming />
     </div>
   );
 }

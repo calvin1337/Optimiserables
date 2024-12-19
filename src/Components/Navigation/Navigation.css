@@ -39,12 +39,12 @@
 }
 
 .navMenu li:hover {
-  background-color: #703b71; 
+  background-color: transparent; 
   color: #fff; 
   width: 100px; 
   border-radius: 25px; 
   transform: translateX(8px) scale(1.1);
-  background: linear-gradient(145deg, #8c4b8e, #703b71);
+  /* background: linear-gradient(145deg, #8c4b8e, #703b71); */
   box-shadow: 4px 4px 12px rgba(87, 41, 97, 0.5);
 }
 

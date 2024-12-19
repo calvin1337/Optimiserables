@@ -28,7 +28,7 @@ const ActorCard = ({ actor }) => {
           href="https://www.instagram.com/optimiserables/"
           target="_blank"
           rel="noreferrer"
-          className="socialLink w-12 h-12 flex justify-center items-center"
+          className="socialLink w-8 h-8 sm:w-12 sm:h-12 flex justify-center items-center"
         >
           <FontAwesomeIcon icon={faInstagram} className="text-2xl sm:text-3xl md:text-4xl xl:text-5xl" color="#ebbc52" />
         </a>
@@ -36,7 +36,7 @@ const ActorCard = ({ actor }) => {
           href="https://x.com/Optimiserables"
           target="_blank"
           rel="noreferrer"
-          className="socialLink w-12 h-12 flex justify-center items-center"
+          className="socialLink w-8 h-8 sm:w-12 sm:h-12 flex justify-center items-center"
         >
           <FontAwesomeIcon icon={faFacebookSquare} className="text-2xl sm:text-3xl md:text-4xl xl:text-5xl" color="#ebbc52" />
         </a>
@@ -44,7 +44,7 @@ const ActorCard = ({ actor }) => {
           href="https://www.tiktok.com/@theoptimiserables?lang=en"
           target="_blank"
           rel="noreferrer"
-          className="socialLink w-12 h-12 flex justify-center items-center"
+          className="socialLink w-8 h-8 sm:w-12 sm:h-12 flex justify-center items-center"
         >
           <FontAwesomeIcon icon={faTiktok} className="text-2xl sm:text-3xl md:text-4xl xl:text-5xl" color="#ebbc52" />
         </a>
@@ -52,7 +52,7 @@ const ActorCard = ({ actor }) => {
           href="https://www.facebook.com/profile.php?id=61557637915188"
           target="_blank"
           rel="noreferrer"
-          className="socialLink w-12 h-12 flex justify-center items-center"
+          className="socialLink w-8 h-8 sm:w-12 sm:h-12 flex justify-center items-center"
         >
           <FontAwesomeIcon icon={faXTwitter} className="text-2xl sm:text-3xl md:text-4xl xl:text-5xl" color="#ebbc52" />
         </a>
