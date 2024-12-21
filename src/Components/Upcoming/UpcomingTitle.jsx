@@ -1,8 +1,8 @@
 import React from 'react';
 
 const UpcomingTitle = () => (
-  <div className="flex text-left w-full border-2 border-white">
-    <h1 className="text-sm lg:text-8xl tracking-widest">Coming Soon</h1>
+  <div className="w-full flex justify-center items-center" style={{ height: "10%" }}>
+      <h1 className="text-2xl sm:text-3xl xl:text-5xl">Coming Soon</h1>
   </div>
 );
 

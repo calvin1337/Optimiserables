@@ -74,6 +74,17 @@ h2{
     0px 4px 1px #6A3276;
 }
 
+h3{
+  color: #6A3276;
+  color: #ffd573;
+  font-family: "Poetsen One", sans-serif;
+  text-shadow:
+    1px 1px 2px black,
+    0px 2px 1px #e3af34,
+    0px 4px 1px #6A3276;
+}
+
+
 
 
 p {
@@ -199,16 +210,4 @@ form label{
     transform: translateX(2rem);
     opacity: 0;
  }
-}
-
-@keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-10px);
-  }
-  60% {
-    transform: translateY(-5px);
-  }
 }

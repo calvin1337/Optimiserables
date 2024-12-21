@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import ActorCard from "./ActorCard";
-import ActorControls from "./ActorControls"; 
+
 
 const actors = [
   {
@@ -45,10 +45,14 @@ const actors = [
     "Lucas McQueen is an actor and writer hailing from (sunny) Dumfries and Galloway. He is excited to perform in his second Fringe production after first appearing at the festival in 2023. He is currently working towards a BA (Hons) Acting and English degree at Edinburgh Napier University. ",
     credits: [""]
   },
-];
+].sort(() => Math.random() - 0.5);
+
 
 export default function CurrentMembers() {
   const [currentActorIndex, setCurrentActorIndex] = useState(0);
+  const [actorsList, setActorsList] = useState(actors);
+
+ 
 
   const handleNext = () => {
     setCurrentActorIndex((prevIndex) => (prevIndex + 1) % actors.length);
@@ -66,11 +70,11 @@ export default function CurrentMembers() {
     <div className="w-full flex justify-center items-center" style={{ height: "10%" }}>
       <h1 className="text-2xl sm:text-3xl xl:text-5xl">Meet the actors!</h1>
     </div>
-    <ActorCard actor={actors[currentActorIndex]} />
+    <ActorCard actor={actorsList[currentActorIndex]} />
     <div className="w-full flex justify-center items-center" style={{ height: "10%" }}>
       <h2 className="text-lg sm:text-xl lg:text-2xl w-full flex justify-evenly md:justify-evenly items-center mt-4 md:mt-0">
         <span>
-          {currentActorIndex + 1} / {actors.length}
+          {currentActorIndex + 1} / {actorsList.length}
         </span>
       </h2>
     </div>
@@ -79,7 +83,7 @@ export default function CurrentMembers() {
   {/* Left Arrow */}
   <button
     onClick={handlePrevious}
-    className="absolute left-4 bottom-4 md:bottom-auto md:top-1/2 transform md:-translate-y-1/2 text-white p-2 rounded hover:opacity-8 z-10"
+    className="absolute left-20 bottom-4 md:bottom-auto md:top-1/2 transform md:-translate-y-1/2 text-white p-2 rounded hover:opacity-8 z-10"
     style={{ backgroundColor: "#F1C570" }}
   >
     &#x1F878;
@@ -88,7 +92,7 @@ export default function CurrentMembers() {
   {/* Right Arrow */}
   <button
     onClick={handleNext}
-    className="absolute right-4 bottom-4 md:bottom-auto md:top-1/2 transform md:-translate-y-1/2 text-white p-2 rounded hover:opacity-8 z-10"
+    className="absolute right-20 bottom-4 md:bottom-auto md:top-1/2 transform md:-translate-y-1/2 text-white p-2 rounded hover:opacity-8 z-10"
     style={{ backgroundColor: "#F1C570" }}
   >
     &#x1F87A;

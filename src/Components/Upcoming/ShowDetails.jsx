@@ -2,7 +2,7 @@ import React from 'react';
 import baldo from '../../Images/baldo_bros.png';
 
 const ShowDetails = () => (
-  <div className="flex-1 pt-4 pr-4 flex flex-col lg:flex-row border-2 border-purple-800">
+  <div className="pt-4 pr-4 flex flex-col lg:flex-row border-2 border-purple-800 h-2/5">
     <img
       src={baldo}
       alt="Baldo Bros Poster"

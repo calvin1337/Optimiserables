@@ -3,7 +3,7 @@ import Upcoming from '../Components/Upcoming/Upcoming';
 
 export default function UpcomingShows() {
   return (
-    <div className="h-full w-full page">
+    <div className="flex flex-col items-center w-screen h-screen">
       <Upcoming />
     </div>
   );
