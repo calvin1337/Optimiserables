@@ -10,10 +10,10 @@ const Upcoming = () => (
   <div className="flex flex-col items-center w-screen h-screen"> 
     <div className="flex flex-col w-full md:w-5/6 h-full">
       <UpcomingTitle />
-      <div className='flex flex-col lg:flex-row w-full h-full p-4 gap-2'>
+      <div className='flex flex-col lg:flex-row w-full h-4/5 p-4 gap-2'>
         
         {/* Image Container */}
-        <div className='w-full lg:w-1/3 h-full flex flex-col gap-2'>
+        <div className='w-full lg:w-1/2 h-full flex flex-col gap-2'>
         <div className="w-full flex flex-col md:flex-col justify-center items-center h-2/5 md:h-4/5 relative">
           <div className="relative w-4/5 h-full border-4 border-[#6A3276]">
             <div className="backlight absolute top-0 left-0 right-0 bottom-0 z-[-1]"></div>
@@ -46,19 +46,19 @@ const Upcoming = () => (
            </div>
         </div>
          {/* Content Container */}
-         <div className='w-full lg:w-1/3 h-full flex flex-col items-start justify-between p-4'>
+         <div className='w-full lg:w-1/2 h-full flex flex-col gap-4 justify-center items-center'>
             <h2 className="text-xl sm:text-2xl lg:text-4xl">Edinburgh Fringe 2025</h2>
             <p className="text-xs sm:text-lg md:text-xl lg:text-2xl text-white w-full">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur at porro, deserunt cupiditate provident voluptas officiis minima distinctio id cumque magnam quidem vero excepturi sapiente tempore accusamus sed, deleniti, fuga itaque. Omnis et tempora tempore sint, officia veritatis repellat! Exercitationem.
             </p>
-            <div className='w-full'>
+            <div className='w-1/2 items-center'>
               <button className="button">
                 Get Notified
               </button>
             </div>
         </div>
        {/* Video Container */}
-        <div className='w-full lg:w-1/3 h-full flex flex-col items-center justify-center gap-2'>
+        <div className='w-full lg:w-1/3 h-full flex-col items-center justify-center gap-2 hidden'>
           <div className="w-full h-1/2">
           <iframe
             src="https://www.youtube.com/embed/"
@@ -105,6 +105,7 @@ const Upcoming = () => (
           </div>  
         </div>
       </div>
+
       </div>
     </div>
     </div>
