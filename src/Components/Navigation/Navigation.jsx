@@ -33,7 +33,7 @@ export default function Navigation({ currentSection }) {
       </div>
 
       <div className="logoContainer">
-        <img src={Logo} alt="Optimiserables Logo" className="OpLogo" />
+        <img src={Logo} alt="Optimiserables Logo" className="w-1/5" />
       </div>
     </nav>
   );

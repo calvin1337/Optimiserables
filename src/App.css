@@ -84,8 +84,25 @@ h3{
     0px 4px 1px #6A3276;
 }
 
+.custom-select {
+  background-color: transparent;
+  color: #6A3276;
+  color: #ffd573;
+  font-family: "Poetsen One", sans-serif;
+  text-shadow:
+    1px 1px 2px black,
+    0px 2px 1px #e3af34,
+    0px 4px 1px #6A3276;
+  border: none;
+  outline: none;
+  font-family: "Poetsen One", sans-serif;
+  cursor: pointer;
+}
 
-
+.custom-select option {
+  background-color: white;
+  color: black;
+}
 
 p {
   font-size: 8px;
