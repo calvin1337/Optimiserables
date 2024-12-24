@@ -81,7 +81,7 @@ export default function CurrentMembers() {
     </div>
     <ActorCard actor={actors[currentActorIndex]} />
     <div className="w-full flex justify-center items-center" style={{ height: "10%" }}>
-      <h2 className="text-lg sm:text-xl lg:text-2xl w-full flex justify-evenly md:justify-evenly items-center mt-4 md:mt-0">
+      <h2 className="bottom-6 absolute text-lg sm:text-xl lg:text-2xl w-full flex justify-evenly md:justify-evenly items-center mt-4 md:mt-0">
         <span>
           {currentActorIndex + 1} / {actors.length}
         </span>
