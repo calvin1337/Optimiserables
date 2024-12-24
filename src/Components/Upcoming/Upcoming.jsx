@@ -4,7 +4,7 @@ import ShowDetails from './ShowDetails';
 import { faFacebookSquare, faInstagram, faTiktok, faXTwitter } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const imagePath = require(`../../Images/Members/optimiserablesframe1.png`);
+const imagePath = require(`../../Images/CatsWithTreats.png`);
 
 const calculateTimeLeft = () => {
   const difference = +new Date('2025-04-19') - +new Date();
@@ -41,12 +41,12 @@ const Upcoming = () => {
           
           {/* Image Container */}
           <div className="w-full md:w-1/2 flex flex-col md:flex-col justify-center items-center h-2/5 md:h-4/5 relative md:p-10">
-            <div className="relative w-4/5 h-full">
+            <div className="relative w-4/5 h-full p-5">
               <div className="backlight absolute top-0 left-0 right-0 bottom-0 z-[-1]"></div>
               <img
                 src={imagePath}
                 alt="Op Cover"
-                className="hover-image object-fill w-full h-full mx-auto"
+                className="hover-image object-fill w-full h-full mx-auto rounded-md"
               />
             </div>
             <div className='w-full h-1/5'>
@@ -96,7 +96,7 @@ const Upcoming = () => {
               {/* Social Links */}
               <div className="flex flex-wrap justify-center items-center gap-6 mt-5">
                 <a
-                  href="https://www.instagram.com/optimiserables/"
+                  href="/"
                   target="_blank"
                   rel="noreferrer"
                   className="socialLink w-8 h-8 sm:w-12 sm:h-12 flex justify-center items-center"
@@ -104,7 +104,7 @@ const Upcoming = () => {
                   <FontAwesomeIcon icon={faInstagram} className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl" color="#ebbc52" />
                 </a>
                 <a
-                  href="https://x.com/Optimiserables"
+                  href="/"
                   target="_blank"
                   rel="noreferrer"
                   className="socialLink w-8 h-8 sm:w-12 sm:h-12 flex justify-center items-center"
@@ -112,7 +112,7 @@ const Upcoming = () => {
                   <FontAwesomeIcon icon={faFacebookSquare} className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl" color="#ebbc52" />
                 </a>
                 <a
-                  href="https://www.tiktok.com/@theoptimiserables?lang=en"
+                  href="/"
                   target="_blank"
                   rel="noreferrer"
                   className="socialLink w-8 h-8 sm:w-12 sm:h-12 flex justify-center items-center"
@@ -120,7 +120,7 @@ const Upcoming = () => {
                   <FontAwesomeIcon icon={faTiktok} className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl" color="#ebbc52" />
                 </a>
                 <a
-                  href="https://www.facebook.com/profile.php?id=61557637915188"
+                  href="/"
                   target="_blank"
                   rel="noreferrer"
                   className="socialLink w-8 h-8 sm:w-12 sm:h-12 flex justify-center items-center"
