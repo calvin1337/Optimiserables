@@ -1,5 +1,4 @@
 import React from 'react';
-import Backlight from '../Misc/Effects/Backlight/Backlight';
 import {faFacebookSquare, faInstagram, faTiktok, faXTwitter } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 

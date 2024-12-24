@@ -1,5 +1,4 @@
 import Form from "../Components/Contact/Form";
-import Footer from "../Components/Navigation/Footer";
 import { faFacebookSquare, faInstagram, faTiktok, faXTwitter } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faArrowUp} from '@fortawesome/free-solid-svg-icons';

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState} from "react";
 import ActorCard from "./ActorCard";
 
 
@@ -59,7 +59,7 @@ const actors = [
 
 export default function CurrentMembers() {
   const [currentActorIndex, setCurrentActorIndex] = useState(0);
-  const [actorsList, setActorsList] = useState(actors);
+  
 
  
 
@@ -79,11 +79,11 @@ export default function CurrentMembers() {
     <div className="w-full flex justify-center items-center" style={{ height: "10%" }}>
       <h1 className="text-2xl sm:text-3xl xl:text-5xl">Meet the actors!</h1>
     </div>
-    <ActorCard actor={actorsList[currentActorIndex]} />
+    <ActorCard actor={actors[currentActorIndex]} />
     <div className="w-full flex justify-center items-center" style={{ height: "10%" }}>
       <h2 className="text-lg sm:text-xl lg:text-2xl w-full flex justify-evenly md:justify-evenly items-center mt-4 md:mt-0">
         <span>
-          {currentActorIndex + 1} / {actorsList.length}
+          {currentActorIndex + 1} / {actors.length}
         </span>
       </h2>
     </div>

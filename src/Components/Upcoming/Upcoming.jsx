@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import UpcomingTitle from './UpcomingTitle';
-import ShowDetails from './ShowDetails';
 import { faFacebookSquare, faInstagram, faTiktok, faXTwitter } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 

@@ -63,7 +63,7 @@
 .logoContainer {
   position: fixed;
   top: 20px;
-  left:20px;
+  right:20px;
   z-index: 100;
   
 }
@@ -77,4 +77,127 @@
   /* .logoContainer {
     display: none;
   } */
+}
+
+.navbarToggler {
+  position: absolute;
+  top: 20px;
+  padding: 0;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  font-size: 1.6rem;
+  background: #532d54;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  color: #ebbc52;
+  left: 100%;
+}
+
+.navSidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  transform: translateX(-100%)  ;
+  height: 100vh;
+  width: 300px;
+  background: #532d54;
+  border-right: 2px solid #ebbc52;
+  z-index: 1000;
+  -webkit-transition: all .4s ease-out;
+  transition: all .4s ease-out;
+  display: none;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 767px){
+  .navbarToggler{
+      display:flex;
+  }
+  .navSidebar {
+    width: 250px;
+    display: block;
+    transform: translateX(-100%)  ;
+}
+} 
+
+
+.showNav{
+  transform:translateX(0) !important;
+}
+
+.navInner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  overflow-y: auto;
+  
+}
+
+.navMenuMobile {
+  width: 100%;
+  padding: 15px 5px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.navMenuMobile li {
+  list-style: none;
+  text-align: center;
+  display: block;
+}
+
+.navMenuMobile li a {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: block;
+  padding: 5px 0;
+  color: #ebbc52;
+  font-weight: 600;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.navInner{
+  color: #ebbc52;
+}
+
+.navMenuMobile li:not(:last-child) {
+  margin-bottom: 1px;
+}
+
+.navMenuMobile li a.active {
+  color: #fff;
+}
+
+
+.navCopyright {
+  display: block;
+  width: 100%;
+  color: #ebbc52;
+  text-align: center;
+  margin-bottom: 0;
+  font-size: 1rem;
+  padding: 16px 0;
+  border-top: 1px solid #ebbc52;
+  font-weight: 300;
+ 
+}
+
+.footer {
+  height: 200px;
+  background-color: #6A3276;
+  width: 100%;
+  margin-top: 50px;
 }

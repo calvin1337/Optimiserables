@@ -52,22 +52,22 @@ function App() {
     <div className="App" {...handlers}>
       <StarBackground />
       <Navigation currentSection={currentSection} setCurrentSection={setCurrentSection} />
-      <Element name="section-0" id="section-0" className="section">
+      <Element name="section-0" >
         <Landingpage />
       </Element>
-      <Element name="section-1" id="section-1" className="section">
+      <Element name="section-1" >
         <Test />
       </Element>
-      <Element name="section-2" id="section-2" className="section">
+      <Element name="section-2" >
         <Members />
       </Element>
-      <Element name="section-3" id="section-3" className="section">
+      <Element name="section-3" >
         <UpcomingShows />
       </Element>
-      <Element name="section-4" id="section-4" className="section">
+      <Element name="section-4" >
         <Home />
       </Element>
-      <Element name="section-5" id="section-5" className="section">
+      <Element name="section-5" >
         <Contact />
       </Element>
     </div>

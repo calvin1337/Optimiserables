@@ -1,12 +1,11 @@
 import React from 'react'
 import Button from '../Components/Misc/Button'
-import {faFacebookSquare, faInstagram, faTiktok, faXTwitter } from '@fortawesome/free-brands-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 
 
 export default function Home() {
   return (
-    
+    <div className='flex flex-col items-center w-screen h-screen'>
     <div className='container flex flex-col items-center justify-center w-5/6 page h-screen'>
       
        
@@ -58,6 +57,7 @@ export default function Home() {
           <img src={fringeLogo} alt="Edinburgh Fringe Logo" className="w-full h-full object-contain bg-transparent"/>
         </div>
       </div> */}
+    </div>
     </div>
   )
 }
