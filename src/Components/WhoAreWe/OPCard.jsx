@@ -41,7 +41,7 @@ const OPCard = ({ actor }) => {
           <FontAwesomeIcon icon={faInstagram} className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl" color="#ebbc52" />
         </a>
         <a
-          href="https://x.com/Optimiserables"
+          href="/"
           target="_blank"
           rel="noreferrer"
           className="socialLink w-8 h-8 sm:w-12 sm:h-12 flex justify-center items-center"
@@ -49,7 +49,7 @@ const OPCard = ({ actor }) => {
           <FontAwesomeIcon icon={faFacebookSquare} className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl" color="#ebbc52" />
         </a>
         <a
-          href="https://www.tiktok.com/@theoptimiserables?lang=en"
+          href="/"
           target="_blank"
           rel="noreferrer"
           className="socialLink w-8 h-8 sm:w-12 sm:h-12 flex justify-center items-center"
@@ -57,7 +57,7 @@ const OPCard = ({ actor }) => {
           <FontAwesomeIcon icon={faTiktok} className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl" color="#ebbc52" />
         </a>
         <a
-          href="https://www.facebook.com/profile.php?id=61557637915188"
+          href="/"
           target="_blank"
           rel="noreferrer"
           className="socialLink w-8 h-8 sm:w-12 sm:h-12 flex justify-center items-center"
