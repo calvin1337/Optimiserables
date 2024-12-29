@@ -74,7 +74,7 @@ export default function CurrentMembers() {
   };
 
   return (
-    <div className="flex flex-col items-center w-screen h-screen relative">
+    <div className="flex flex-col items-center w-screen h-dvh relative">
   <div className="flex flex-col w-full md:w-5/6 h-full pt-5 pb-5">
     <div className="w-full flex justify-center items-center" style={{ height: "10%" }}>
       <h1 className="text-2xl sm:text-3xl xl:text-5xl">Meet the actors!</h1>
