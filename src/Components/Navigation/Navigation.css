@@ -100,7 +100,7 @@
   left: 0;
   top: 0;
   transform: translateX(-100%)  ;
-  height: 100vh;
+  height: 100dvh;
   width: 300px;
   background: #532d54;
   border-right: 2px solid #ebbc52;

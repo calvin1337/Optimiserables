@@ -5,7 +5,7 @@ import {faArrowUp} from '@fortawesome/free-solid-svg-icons';
 
 export default function Contact() {
   return (
-    <div className="flex flex-col items-center w-screen h-screen">
+    <div className="flex flex-col items-center w-screen h-dvh">
       <div className="flex flex-col w-full h-full pt-5 pb-5 justify-center items-center">
         <div className="w-full flex justify-center items-center" style={{ height: "10%" }}>
           <h1 className="text-2xl sm:text-3xl xl:text-5xl">Contact us!</h1>
