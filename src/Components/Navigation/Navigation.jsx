@@ -32,7 +32,7 @@ export default function Navigation({ currentSection, setCurrentSection }) {
       <button onClick={toggleNav} className="navbarToggler">
                 <FontAwesomeIcon icon={toggle ? faTimes : faBars} />
         </button>
-            <div className="navInner p-10 gap-20">
+            <div className="navInner p-10 gap-5">
               <img src={Logo} alt="Optimiserables Logo Edinburgh Fringe 2025" className=' w-full'/>
               <img
                 src={imagePath}
@@ -46,7 +46,7 @@ export default function Navigation({ currentSection, setCurrentSection }) {
                         </Link>
                     ))}
                 </ul>
-                <div className='mt-auto'>
+                <div className='mt-auto justify-end align-bottom items-end'>
                 <h3 className='mb-4'>Follow us!</h3>
                 <div className='sm: flex col gap-2 mb-4'>
                     <FontAwesomeIcon icon={faInstagram} size="3x" color='#ebbc52'/>

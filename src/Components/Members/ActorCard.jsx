@@ -12,9 +12,9 @@ const ActorCard = ({ actor }) => {
   };
 
   return (
-    <div className="flex flex-col md:flex-row gap-5 h-3/5 md:items-center md:justify-center w-full">
+    <div className="flex flex-col md:flex-row gap-5 h-4/5 md:items-center md:justify-center w-full">
       {/* Image Container with Background Effect */}
-      <div className="w-full md:w-1/2 flex flex-col md:flex-col justify-center items-center h-2/5 md:h-4/5 relative md-p-10">
+      <div className="w-full md:w-1/2 flex flex-col md:flex-col justify-center items-center h-2/5 md:h-4/5 relative">
         <div className="relative w-4/5 h-full">
           <div className="backlight absolute top-0 left-0 right-0 bottom-0 z-[-1]"></div>
           <img
